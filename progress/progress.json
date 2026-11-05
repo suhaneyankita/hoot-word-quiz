@@ -4,16 +4,16 @@
  "words": {
   "sashay": {
    "status": "Practise",
-   "timesAsked": 5,
-   "timesWrong": 4,
+   "timesAsked": 6,
+   "timesWrong": 5,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
   "reciprocate": {
-   "status": "Practise",
-   "timesAsked": 5,
+   "status": "Passed",
+   "timesAsked": 6,
    "timesWrong": 3,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "insipid": {
@@ -24,10 +24,10 @@
    "lastSeen": "2026-11-05"
   },
   "weedy": {
-   "status": "Practise",
-   "timesAsked": 4,
+   "status": "Passed",
+   "timesAsked": 5,
    "timesWrong": 2,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "insist": {
@@ -66,10 +66,10 @@
    "lastSeen": "2026-11-05"
   },
   "hinder": {
-   "status": "Practise",
-   "timesAsked": 2,
+   "status": "Passed",
+   "timesAsked": 3,
    "timesWrong": 1,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "commotion": {
@@ -116,8 +116,8 @@
   },
   "proclaim": {
    "status": "Practise",
-   "timesAsked": 3,
-   "timesWrong": 3,
+   "timesAsked": 4,
+   "timesWrong": 4,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
@@ -144,9 +144,9 @@
   },
   "dire": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "torrential": {
@@ -255,6 +255,55 @@
    "lastSeen": "2026-11-05"
   },
   "reiterate": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "clot": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "modest": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "procure": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "mixture": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "teat": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "cushion": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "dame": {
    "status": "Passed",
    "timesAsked": 1,
    "timesWrong": 0,
