@@ -20,6 +20,14 @@ Send Claude a photo or a list of words and ask it to add them. Claude:
 
 The next time the iPad is online and the app is opened, the new words arrive ("🎁 new words arrived!"). Her progress is kept.
 
+## Saving progress to GitHub automatically
+
+1. On GitHub, signed in as suhaneyankita, go to **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
+2. Name it "Hoot iPad" and set an expiry of up to a year. Under **Repository access** choose **Only select repositories → hoot-word-quiz**. Under **Permissions → Contents**, choose **Read and write**. Then generate it and copy it.
+3. On the iPad, open the **Grown-ups corner** (press and hold Hoot), paste the key under **Save progress to GitHub** and tap **Connect**.
+
+After every quiz, if the iPad is online, the app saves `progress/progress.json` to the repository. To copy it into the spreadsheet, ask Claude to run `bash tools/update_progress.sh`. If the iPad is ever lost, delete the key on GitHub on the same page.
+
 ## Seeing her progress
 
 - On the iPad, **press and hold Hoot** on the start screen for 2 seconds to open the **Grown-ups corner**. It lists the words to practise.

@@ -3,7 +3,7 @@ const CACHE = "hoot-v1";
 const FILES = [
   "./", "index.html", "style.css", "manifest.webmanifest",
   "js/main.js", "js/wordlist.js", "js/progress.js", "js/selection.js",
-  "js/questions.js", "js/jokes.js", "js/sounds.js", "js/net.js",
+  "js/questions.js", "js/jokes.js", "js/sounds.js", "js/net.js", "js/sync.js",
   "data/words.json", "data/jokes.json",
   "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png",
 ];

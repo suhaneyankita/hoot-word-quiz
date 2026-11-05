@@ -4,14 +4,17 @@
 #   bash tools/publish.sh --dry-run  export and test only
 set -euo pipefail
 cd "$(dirname "$0")/.."
-
-OWNER="suhaneyankita"
-REPO="hoot-word-quiz"
+source tools/github_personal.sh
 
 branch="$(git branch --show-current)"
 if [[ "$branch" != "main" ]]; then
   echo "Publish from main (you're on '$branch')." >&2
   exit 1
+fi
+
+if [[ "${1:-}" != "--dry-run" ]]; then
+  use_personal_account
+  if gh repo view "$OWNER/$REPO" > /dev/null 2>&1; then pull_main; fi
 fi
 
 .venv/bin/python tools/export_words.py "Word List.xlsx" app/data/words.json
@@ -24,25 +27,13 @@ if [[ "${1:-}" == "--dry-run" ]]; then
   exit 0
 fi
 
-# Always act as the personal account, never the work one (which may be set in GITHUB_TOKEN).
-unset GITHUB_TOKEN
-GH_TOKEN="$(gh auth token --hostname github.com --user "$OWNER" 2>/dev/null || true)"
-export GH_TOKEN
-login="$( [[ -n "$GH_TOKEN" ]] && gh api user --jq .login 2>/dev/null || true)"
-if [[ "$login" != "$OWNER" ]]; then
-  echo "Not signed in as '$OWNER'. Run: env -u GITHUB_TOKEN gh auth login --hostname github.com --git-protocol https --web" >&2
-  exit 1
-fi
-REMOTE="https://github.com/$OWNER/$REPO.git"
-push() { git -c credential.helper= -c credential.helper='!gh auth git-credential' push "$REMOTE" main; }
-
 git add app/data/words.json
 git diff --cached --quiet || git commit -q -m "chore: update word list"
 
 if ! gh repo view "$OWNER/$REPO" > /dev/null 2>&1; then
   gh repo create "$OWNER/$REPO" --public --description "Hoot's Word Quiz for iPad"
 fi
-push
+push_main
 
 # The website is the app/ folder, published on its own gh-pages branch.
 # Each publish gets a fresh offline-cache name so the iPad picks up the new files.
@@ -55,7 +46,7 @@ touch "$site/.nojekyll"
   git init -q -b gh-pages
   git add -A
   git -c user.name="$OWNER" -c user.email="$OWNER@users.noreply.github.com" commit -q -m "chore: publish site"
-  git -c credential.helper= -c credential.helper='!gh auth git-credential' push -q --force "$REMOTE" gh-pages
+  git_personal push -q --force "$REMOTE" gh-pages
 )
 rm -rf "$site"
 

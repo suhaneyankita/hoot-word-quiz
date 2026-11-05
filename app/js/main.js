@@ -6,10 +6,16 @@ import { buildQuiz, PROMPTS } from "./questions.js";
 import { nextJoke } from "./jokes.js";
 import { unlockAudio, playBoing, playCheer } from "./sounds.js";
 import { fetchJson } from "./net.js";
+import { saveToGitHub } from "./sync.js";
 
 const LENGTHS = [5, 10, 15, 20, 30, 40, 50];
 const SECONDS = 30;
 const WORDS_KEY = "hoot.words.v1";
+const GH_REPO = { owner: "suhaneyankita", repo: "hoot-word-quiz", path: "progress/progress.json" };
+const GH_KEY = "hoot.github.key";
+const GH_LAST = "hoot.github.last";
+const GH_DIRTY = "hoot.github.dirty";
+const GH_STATUS = "hoot.github.status";
 const GREETINGS = [
   "Hello superstar! Ready to grow your word-brain? 🧠✨",
   "Hoot hoot! Let's learn some brilliant words today! 📚",
@@ -60,6 +66,7 @@ async function refreshData() {
 // Back from the background (Home Screen apps are usually resumed, not relaunched): look for new words.
 async function refreshOnStart() {
   navigator.serviceWorker?.getRegistration?.().then((r) => r?.update()).catch(() => {});
+  syncProgress(); // anything that couldn't be saved earlier (e.g. the iPad was offline)
   if (await refreshData() && screen === "start") showStart();
 }
 
@@ -154,6 +161,7 @@ function answer(choice) {
   const q = quiz.questions[quiz.index];
   const correct = choice === q.answer;
   store.record(q.word, correct, today());
+  writeLocal(GH_DIRTY, "1");
 
   app.querySelectorAll(".opt").forEach((b) => {
     const opt = q.options[Number(b.dataset.i)];
@@ -255,6 +263,7 @@ function showFinished() {
   app.querySelector("#again").addEventListener("click", () => { unlockAudio(); startQuiz(length); });
   app.querySelector("#home").addEventListener("click", showStart);
   confetti();
+  syncProgress();
 }
 
 function confetti() {
@@ -286,6 +295,8 @@ function showGrownUps() {
           ${practise.map(([w, p]) => `<tr><td>${esc(w)}</td><td>${p.timesWrong}</td><td>${esc(p.lastSeen ?? "")}</td></tr>`).join("")}</table>`
         : `<p style="text-align:center">Nothing to practise yet. 🎉</p>`}
       </div>
+      <h2>Save progress to GitHub</h2>
+      <div id="ghBox"></div>
       <div class="row">
         <button class="btn pink" id="send">Send progress to Mac 📤</button>
         <button class="btn" id="back">Back</button>
@@ -294,6 +305,85 @@ function showGrownUps() {
     </div>`;
   app.querySelector("#back").addEventListener("click", showStart);
   app.querySelector("#send").addEventListener("click", sendProgress);
+  renderGitHubBox();
+}
+
+function renderGitHubBox(message = "") {
+  const box = document.getElementById("ghBox");
+  if (!box) return;
+  const token = readLocal(GH_KEY);
+  if (!token) {
+    box.innerHTML = `
+      <p class="meta">Paste a GitHub key that can only edit the <b>hoot-word-quiz</b> repository. Progress then saves itself after every quiz.</p>
+      <div class="row"><input id="ghKey" class="key-input" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…">
+      <button class="btn" id="ghConnect">Connect</button></div>
+      <p class="meta">${esc(message)}</p>`;
+    box.querySelector("#ghConnect").addEventListener("click", async () => {
+      const key = box.querySelector("#ghKey").value.trim();
+      if (!key) return;
+      writeLocal(GH_KEY, key);
+      renderGitHubBox("Connecting…");
+      const res = await syncProgress(true);
+      if (!res.ok && res.reason === "bad-key") {
+        writeLocal(GH_KEY, null);
+        renderGitHubBox("That key didn't work. Check it can edit hoot-word-quiz (Contents: Read and write).");
+      } else {
+        renderGitHubBox(res.ok ? "Connected and saved! ✅" : "Key saved. It will save when the iPad is online.");
+      }
+    });
+    return;
+  }
+  const last = readLocal(GH_LAST);
+  const when = last ? new Date(last).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "not yet";
+  const bad = readLocal(GH_STATUS) === "bad-key";
+  box.innerHTML = `
+    <p class="meta">${bad ? "⚠️ The key isn't working any more (it may have expired). Remove it and paste a new one." : `✅ Connected · Last saved to GitHub: ${esc(when)}`}</p>
+    <div class="row"><button class="btn" id="ghNow">Save now</button><button class="btn pink" id="ghRemove">Remove key</button></div>
+    <p class="meta">${esc(message)}</p>`;
+  box.querySelector("#ghNow").addEventListener("click", async () => {
+    renderGitHubBox("Saving…");
+    const res = await syncProgress(true);
+    renderGitHubBox(res.ok ? "Saved! ✅" : res.reason === "offline" ? "No internet right now; it will try again later." : "Couldn't save just now.");
+  });
+  box.querySelector("#ghRemove").addEventListener("click", () => {
+    writeLocal(GH_KEY, null);
+    writeLocal(GH_STATUS, null);
+    renderGitHubBox("Key removed from this iPad.");
+  });
+}
+
+// ---------- Saving progress to GitHub ----------
+
+function readLocal(key) {
+  try { return localStorage.getItem(key); } catch { return null; }
+}
+
+function writeLocal(key, value) {
+  try {
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
+  } catch { /* storage blocked */ }
+}
+
+let syncing = null;
+
+// Saves the progress file if there's something new (or when asked to), without ever bothering her.
+function syncProgress(force = false) {
+  if (syncing) return syncing;
+  if (!readLocal(GH_KEY) || (!force && readLocal(GH_DIRTY) !== "1")) return Promise.resolve({ ok: false, reason: "nothing" });
+  syncing = saveToGitHub({ ...GH_REPO, token: readLocal(GH_KEY), json: store.exportFile(today()) })
+    .then((res) => {
+      if (res.ok) {
+        writeLocal(GH_LAST, new Date().toISOString());
+        writeLocal(GH_DIRTY, null);
+        writeLocal(GH_STATUS, null);
+      } else if (res.reason === "bad-key") {
+        writeLocal(GH_STATUS, "bad-key");
+      }
+      return res;
+    })
+    .finally(() => { syncing = null; });
+  return syncing;
 }
 
 async function sendProgress() {
