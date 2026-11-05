@@ -1,0 +1,36 @@
+name: Update spreadsheet from iPad progress
+
+# Runs whenever the iPad saves progress/progress.json, and copies it into Word List.xlsx.
+# Only the progress columns change; words, meanings and sentences are left alone.
+on:
+  push:
+    branches: [main]
+    paths: [progress/progress.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-spreadsheet
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - run: python tools/import_progress.py progress/progress.json "Word List.xlsx"
+      - name: Save the spreadsheet
+        run: |
+          git config user.name "hoot-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "Word List.xlsx"
+          if git diff --cached --quiet; then echo "Already up to date"; exit 0; fi
+          git commit -m "chore: update progress in Word List.xlsx"
+          git pull --rebase
+          git push
