@@ -3,10 +3,10 @@
  "exported": "2026-11-05",
  "words": {
   "sashay": {
-   "status": "Practise",
-   "timesAsked": 7,
+   "status": "Passed",
+   "timesAsked": 8,
    "timesWrong": 5,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "reciprocate": {
@@ -115,10 +115,10 @@
    "lastSeen": "2026-11-05"
   },
   "proclaim": {
-   "status": "Practise",
-   "timesAsked": 5,
+   "status": "Passed",
+   "timesAsked": 6,
    "timesWrong": 4,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "obnoxious": {
@@ -596,6 +596,27 @@
    "timesWrong": 0,
    "correctInARow": 1,
    "lastSeen": "2026-11-05"
+  },
+  "treacherous": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "endure": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "recede": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
   }
  },
  "jokesSeen": [
@@ -604,6 +625,7 @@
   157,
   150,
   80,
-  110
+  110,
+  133
  ]
 }
