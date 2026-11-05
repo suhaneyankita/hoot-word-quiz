@@ -4,16 +4,16 @@
  "words": {
   "sashay": {
    "status": "Practise",
-   "timesAsked": 3,
-   "timesWrong": 2,
-   "correctInARow": 1,
+   "timesAsked": 4,
+   "timesWrong": 3,
+   "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
   "reciprocate": {
    "status": "Practise",
-   "timesAsked": 3,
-   "timesWrong": 2,
-   "correctInARow": 1,
+   "timesAsked": 4,
+   "timesWrong": 3,
+   "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
   "insipid": {
@@ -25,9 +25,9 @@
   },
   "weedy": {
    "status": "Practise",
-   "timesAsked": 2,
-   "timesWrong": 1,
-   "correctInARow": 1,
+   "timesAsked": 3,
+   "timesWrong": 2,
+   "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
   "insist": {
@@ -67,9 +67,9 @@
   },
   "hinder": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "commotion": {
@@ -102,9 +102,9 @@
   },
   "crib": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "flounder": {
@@ -116,8 +116,8 @@
   },
   "proclaim": {
    "status": "Practise",
-   "timesAsked": 1,
-   "timesWrong": 1,
+   "timesAsked": 2,
+   "timesWrong": 2,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
@@ -158,9 +158,9 @@
   },
   "complacent": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "lubricate": {
@@ -169,11 +169,68 @@
    "timesWrong": 1,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
+  },
+  "hark": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "garments": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "savage": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "aggravate": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "portable": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "dissuade": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "gradual": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "mandolin": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
   }
  },
  "jokesSeen": [
   71,
   129,
-  157
+  157,
+  150
  ]
 }
