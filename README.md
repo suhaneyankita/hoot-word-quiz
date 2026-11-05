@@ -31,4 +31,4 @@ The next time the iPad is online and the app is opened, the new words arrive ("ð
 - `app/` is the published site (plain HTML/CSS/JS), copied to the `gh-pages` branch by `tools/publish.sh`. Logic lives in `app/js/*.js` with no DOM access.
 - Run the tests with `npm test` and `.venv/bin/pytest -q tests`.
 - To run it locally, use `python3 -m http.server 8765 -d app`.
-- `Word List.xlsx` is kept on the Mac only and isn't published.
+- `Word List.xlsx` is the master word list (with her progress after imports). It is in this public repo but is not part of the website.
