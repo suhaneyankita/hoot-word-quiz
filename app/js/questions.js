@@ -19,22 +19,36 @@ export function availableTypes(w) {
   return types;
 }
 
-// A candidate that could also be a right answer for "same meaning" or "fits the gap".
-export function isUnsafe(candidate, w, allWords) {
-  const c = lower(candidate);
-  const synonyms = w.synonyms.map(lower);
-  if (c === lower(w.word) || synonyms.includes(c)) return true;
-  return allWords.some((o) => lower(o.word) === c &&
-    o.synonyms.some((s) => lower(s) === lower(w.word) || synonyms.includes(lower(s))));
+const overlaps = (list, set) => list.some((x) => set.has(lower(x)));
+
+// Everything that means roughly the same as w, and everything that means roughly the opposite,
+// judged from w's own lists and from how other list words relate to it.
+function relations(w, allWords) {
+  const self = lower(w.word);
+  const syn = new Set([self, ...w.synonyms.map(lower)]);
+  const ant = new Set(w.antonyms.map(lower));
+  const near = new Set(syn);
+  const opposite = new Set(ant);
+  for (const o of allWords) {
+    const word = lower(o.word);
+    if (word === self) continue;
+    if (syn.has(word) || overlaps(o.synonyms, syn) || overlaps(o.antonyms, ant)) {
+      near.add(word);
+      o.antonyms.forEach((a) => opposite.add(lower(a)));
+    }
+    if (ant.has(word) || overlaps(o.antonyms, syn) || overlaps(o.synonyms, ant)) opposite.add(word);
+  }
+  // A word meaning the same as an opposite is an opposite too (sociable ≈ gregarious, the opposite of timid).
+  for (const o of allWords) {
+    const word = lower(o.word);
+    if (word !== self && !near.has(word) && overlaps(o.synonyms, opposite)) opposite.add(word);
+  }
+  return { near, opposite };
 }
 
-// A candidate that could also be a right answer for "opposite".
-function isOpposite(candidate, w, allWords) {
-  const c = lower(candidate);
-  const antonyms = w.antonyms.map(lower);
-  if (antonyms.includes(c)) return true;
-  return allWords.some((o) => lower(o.word) === c &&
-    (o.antonyms.some((a) => lower(a) === lower(w.word)) || o.synonyms.some((s) => antonyms.includes(lower(s)))));
+// A candidate that could also be a right answer for "same meaning" or "fits the gap".
+export function isUnsafe(candidate, w, allWords) {
+  return relations(w, allWords).near.has(lower(candidate));
 }
 
 function pickDistractors(pool, answer, rand, required = []) {
@@ -52,28 +66,29 @@ function pickDistractors(pool, answer, rand, required = []) {
 export function buildQuestion(w, type, allWords, rand = Math.random) {
   const others = allWords.filter((o) => lower(o.word) !== lower(w.word));
   const pick = (list) => list[Math.floor(rand() * list.length)];
+  const { near, opposite } = relations(w, allWords);
+  const isNear = (c) => near.has(lower(c));
+  const isOpposite = (c) => opposite.has(lower(c));
   let answer, distractors;
 
   if (type === "synonym") {
     answer = pick(w.synonyms);
-    // Synonyms of an unsafe word are near-synonyms of this word too, so skip them all.
-    const pool = others
-      .filter((o) => !isUnsafe(o.word, w, allWords))
-      .flatMap((o) => [o.word, ...o.synonyms])
-      .filter((c) => !isUnsafe(c, w, allWords));
+    // Synonyms of a near word are near-synonyms of this word too, so skip them all.
+    const pool = others.filter((o) => !isNear(o.word)).flatMap((o) => [o.word, ...o.synonyms]).filter((c) => !isNear(c));
     const trap = w.antonyms.length ? [pick(w.antonyms)] : [];
     distractors = pickDistractors(pool, answer, rand, trap);
   } else if (type === "antonym") {
     answer = pick(w.antonyms);
-    const pool = [...w.synonyms, ...others.map((o) => o.word)].filter((c) => !isOpposite(c, w, allWords));
+    const pool = [...w.synonyms, ...others.map((o) => o.word)].filter((c) => !isOpposite(c));
     distractors = pickDistractors(pool, answer, rand);
   } else if (type === "meaning") {
     answer = w.meaning;
-    const pool = others.filter((o) => o.meaning && !isUnsafe(o.word, w, allWords)).map((o) => o.meaning);
+    const pool = others.filter((o) => o.meaning && !isNear(o.word)).map((o) => o.meaning);
     distractors = pickDistractors(pool, answer, rand);
   } else if (type === "gap") {
     answer = w.word;
-    const pool = others.filter((o) => isReady(o) && !isUnsafe(o.word, w, allWords)).map((o) => o.word);
+    // Opposites often fit the same sentence ("She was boastful about her prize"), so skip them too.
+    const pool = others.filter((o) => isReady(o) && !isNear(o.word) && !isOpposite(o.word)).map((o) => o.word);
     distractors = pickDistractors(pool, answer, rand);
   }
   if (!distractors) return null;

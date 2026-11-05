@@ -86,6 +86,38 @@ test("words sharing a synonym, and synonyms of synonyms, are never same-meaning 
   }
 });
 
+const extra = [
+  { word: "aloof", meaning: "unfriendly and distant", synonyms: ["distant", "cold"], antonyms: ["friendly", "warm"], sentence: "The new girl seemed aloof." },
+  { word: "modest", meaning: "not boasting", synonyms: ["humble"], antonyms: ["boastful", "arrogant"], sentence: "She was modest about her prize." },
+  { word: "boastful", meaning: "showing off", synonyms: ["bragging", "cocky"], antonyms: ["modest", "humble"], sentence: "The boastful boy showed off." },
+  { word: "adept", meaning: "very skilled", synonyms: ["skilful", "expert"], antonyms: ["inept", "clumsy"], sentence: "She is adept at puzzles." },
+];
+const WIDE = [...READY, ...extra];
+const wide = (name) => WIDE.find((x) => x.word === name);
+
+function neverDistractor(word, type, banned, seed) {
+  const rand = mulberry32(seed);
+  for (let i = 0; i < 300; i++) {
+    const q = buildQuestion(wide(word), type, WIDE, rand);
+    const others = q.options.filter((o) => o !== q.answer);
+    for (const bad of banned) assert.ok(!others.includes(bad), `${word}/${type}: ${q.options}`);
+  }
+}
+
+test("opposite: a word whose antonyms are this word's synonyms is not a distractor", () => {
+  neverDistractor("gregarious", "antonym", ["aloof"], 21);
+  neverDistractor("timid", "antonym", ["gregarious", "sociable"], 22);
+});
+
+test("gap: the word's own antonyms, and words listing it as an antonym, are not options", () => {
+  neverDistractor("modest", "gap", ["boastful"], 23);
+  neverDistractor("boastful", "gap", ["modest"], 24);
+});
+
+test("same meaning: words sharing an antonym are not distractors", () => {
+  neverDistractor("adept", "synonym", ["nimble"], 25);
+});
+
 test("gap question shows blanked sentence and explanation", () => {
   const q = buildQuestion(find("timid"), "gap", READY, mulberry32(10));
   assert.equal(q.display, "The ______ mouse hid behind the cupboard.");
