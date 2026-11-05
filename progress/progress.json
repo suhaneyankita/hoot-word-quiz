@@ -4,16 +4,16 @@
  "words": {
   "sashay": {
    "status": "Practise",
-   "timesAsked": 4,
-   "timesWrong": 3,
+   "timesAsked": 5,
+   "timesWrong": 4,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
   "reciprocate": {
    "status": "Practise",
-   "timesAsked": 4,
+   "timesAsked": 5,
    "timesWrong": 3,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "insipid": {
@@ -25,9 +25,9 @@
   },
   "weedy": {
    "status": "Practise",
-   "timesAsked": 3,
+   "timesAsked": 4,
    "timesWrong": 2,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "insist": {
@@ -101,10 +101,10 @@
    "lastSeen": "2026-11-05"
   },
   "crib": {
-   "status": "Practise",
-   "timesAsked": 2,
+   "status": "Passed",
+   "timesAsked": 3,
    "timesWrong": 1,
-   "correctInARow": 1,
+   "correctInARow": 2,
    "lastSeen": "2026-11-05"
   },
   "flounder": {
@@ -116,8 +116,8 @@
   },
   "proclaim": {
    "status": "Practise",
-   "timesAsked": 2,
-   "timesWrong": 2,
+   "timesAsked": 3,
+   "timesWrong": 3,
    "correctInARow": 0,
    "lastSeen": "2026-11-05"
   },
@@ -225,12 +225,48 @@
    "timesWrong": 0,
    "correctInARow": 1,
    "lastSeen": "2026-11-05"
+  },
+  "terminate": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "transpires": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "overenthused": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "idiosyncratic": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "reiterate": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
   }
  },
  "jokesSeen": [
   71,
   129,
   157,
-  150
+  150,
+  80
  ]
 }
