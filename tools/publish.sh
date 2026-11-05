@@ -8,6 +8,12 @@ cd "$(dirname "$0")/.."
 OWNER="suhaneyankita"
 REPO="hoot-word-quiz"
 
+branch="$(git branch --show-current)"
+if [[ "$branch" != "main" ]]; then
+  echo "Publish from main (you're on '$branch')." >&2
+  exit 1
+fi
+
 .venv/bin/python tools/export_words.py "Word List.xlsx" app/data/words.json
 node --test tests/*.test.mjs > /dev/null
 .venv/bin/pytest -q tests > /dev/null
@@ -30,18 +36,14 @@ fi
 REMOTE="https://github.com/$OWNER/$REPO.git"
 push() { git -c credential.helper= -c credential.helper='!gh auth git-credential' push "$REMOTE" main; }
 
-# New cache name so the iPad picks up the new files.
-n="$(grep -o 'hoot-v[0-9]*' app/sw.js | grep -o '[0-9]*$')"
-sed -i '' "s/hoot-v$n\"/hoot-v$((n + 1))\"/" app/sw.js
-
-git add app
+git add app/data/words.json
 git diff --cached --quiet || git commit -q -m "chore: update word list"
 
+# The deploy workflow gives the offline cache a fresh name on every push, so the iPad updates.
 if ! gh repo view "$OWNER/$REPO" > /dev/null 2>&1; then
   gh repo create "$OWNER/$REPO" --public --description "Hoot's Word Quiz for iPad"
-  push
+  # Pages must be switched on before the first push, or the first deploy fails.
   gh api -X POST "repos/$OWNER/$REPO/pages" -f build_type=workflow > /dev/null
-else
-  push
 fi
-echo "Published: https://$OWNER.github.io/$REPO/"
+push
+echo "Published: https://$OWNER.github.io/$REPO/ (live in a minute or two)"
