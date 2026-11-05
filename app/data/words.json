@@ -1,0 +1,2235 @@
+{
+ "version": "2026-11-05T11:50:11+00:00",
+ "words": [
+  {
+   "word": "adulation",
+   "meaning": "great praise and admiration, often more than is deserved",
+   "synonyms": [
+    "praise",
+    "admiration",
+    "worship"
+   ],
+   "antonyms": [
+    "criticism",
+    "scorn"
+   ],
+   "sentence": "The pop star waved to the crowd, enjoying their adulation."
+  },
+  {
+   "word": "complacent",
+   "meaning": "so pleased with yourself that you stop trying hard",
+   "synonyms": [
+    "smug",
+    "self-satisfied"
+   ],
+   "antonyms": [
+    "careful",
+    "concerned"
+   ],
+   "sentence": "After winning twice, the team grew complacent and lost the final."
+  },
+  {
+   "word": "discontented",
+   "meaning": "unhappy and not satisfied",
+   "synonyms": [
+    "unhappy",
+    "dissatisfied",
+    "displeased"
+   ],
+   "antonyms": [
+    "content",
+    "satisfied"
+   ],
+   "sentence": "The discontented cat yowled until it got its dinner."
+  },
+  {
+   "word": "dismantled",
+   "meaning": "taken apart piece by piece",
+   "synonyms": [
+    "took apart",
+    "disassembled",
+    "demolished"
+   ],
+   "antonyms": [
+    "assembled",
+    "built",
+    "constructed"
+   ],
+   "sentence": "Dad dismantled the old bunk bed so it would fit in the car."
+  },
+  {
+   "word": "enthral",
+   "meaning": "to hold someone's attention completely, as if by magic",
+   "synonyms": [
+    "captivate",
+    "fascinate",
+    "enchant"
+   ],
+   "antonyms": [
+    "bore"
+   ],
+   "sentence": "The storyteller could enthral the whole class for an hour."
+  },
+  {
+   "word": "horrendous",
+   "meaning": "extremely bad or shocking",
+   "synonyms": [
+    "dreadful",
+    "terrible",
+    "awful"
+   ],
+   "antonyms": [
+    "wonderful",
+    "pleasant",
+    "delightful"
+   ],
+   "sentence": "The traffic was horrendous, so we were late for school."
+  },
+  {
+   "word": "melancholy",
+   "meaning": "a deep, quiet feeling of sadness",
+   "synonyms": [
+    "sadness",
+    "gloom",
+    "sorrow"
+   ],
+   "antonyms": [
+    "joy",
+    "cheerfulness"
+   ],
+   "sentence": "A feeling of melancholy came over her as she watched the rain."
+  },
+  {
+   "word": "reciprocate",
+   "meaning": "to give back the same kind of thing you have been given",
+   "synonyms": [
+    "return",
+    "repay"
+   ],
+   "antonyms": [
+    "ignore"
+   ],
+   "sentence": "She helped him with his homework, so he wanted to reciprocate."
+  },
+  {
+   "word": "transpires",
+   "meaning": "turns out, or becomes known",
+   "synonyms": [
+    "emerges",
+    "comes to light"
+   ],
+   "antonyms": [],
+   "sentence": "It transpires that the missing keys were in his pocket all along."
+  },
+  {
+   "word": "treacherous",
+   "meaning": "very dangerous, or not to be trusted",
+   "synonyms": [
+    "dangerous",
+    "hazardous",
+    "disloyal"
+   ],
+   "antonyms": [
+    "safe",
+    "loyal",
+    "trustworthy"
+   ],
+   "sentence": "The icy path was treacherous after the storm."
+  },
+  {
+   "word": "abhor",
+   "meaning": "to hate something very strongly",
+   "synonyms": [
+    "hate",
+    "detest",
+    "loathe"
+   ],
+   "antonyms": [
+    "love",
+    "adore"
+   ],
+   "sentence": "I abhor cruelty to animals."
+  },
+  {
+   "word": "annual",
+   "meaning": "happening once every year",
+   "synonyms": [
+    "yearly"
+   ],
+   "antonyms": [],
+   "sentence": "The school holds its annual sports day every June."
+  },
+  {
+   "word": "committed",
+   "meaning": "willing to work hard and give lots of time to something",
+   "synonyms": [
+    "dedicated",
+    "devoted"
+   ],
+   "antonyms": [
+    "half-hearted"
+   ],
+   "sentence": "She was committed to practising the piano every single day."
+  },
+  {
+   "word": "endure",
+   "meaning": "to put up with something hard or painful for a long time",
+   "synonyms": [
+    "bear",
+    "tolerate",
+    "withstand"
+   ],
+   "antonyms": [
+    "give in",
+    "surrender"
+   ],
+   "sentence": "The explorers had to endure freezing winds on the mountain."
+  },
+  {
+   "word": "hastily",
+   "meaning": "in a quick, hurried way, often carelessly",
+   "synonyms": [
+    "hurriedly",
+    "quickly",
+    "rashly"
+   ],
+   "antonyms": [
+    "slowly",
+    "carefully"
+   ],
+   "sentence": "He hastily scribbled a note before rushing out of the door."
+  },
+  {
+   "word": "materialised",
+   "meaning": "appeared, or became real",
+   "synonyms": [
+    "appeared",
+    "emerged"
+   ],
+   "antonyms": [
+    "vanished",
+    "disappeared"
+   ],
+   "sentence": "The promised money never materialised, so the trip was cancelled."
+  },
+  {
+   "word": "quirky",
+   "meaning": "unusual in a fun and interesting way",
+   "synonyms": [
+    "odd",
+    "unusual",
+    "offbeat"
+   ],
+   "antonyms": [
+    "ordinary",
+    "normal"
+   ],
+   "sentence": "Her quirky sense of humour always makes the class laugh."
+  },
+  {
+   "word": "terminate",
+   "meaning": "to bring to an end, or to stop",
+   "synonyms": [
+    "end",
+    "stop",
+    "finish"
+   ],
+   "antonyms": [
+    "begin",
+    "start"
+   ],
+   "sentence": "This train will terminate at the next station."
+  },
+  {
+   "word": "unforeseen",
+   "meaning": "not expected or predicted",
+   "synonyms": [
+    "unexpected",
+    "surprising"
+   ],
+   "antonyms": [
+    "expected",
+    "predicted"
+   ],
+   "sentence": "Unforeseen delays meant the parcel arrived a week late."
+  },
+  {
+   "word": "unruly",
+   "meaning": "badly behaved and hard to control",
+   "synonyms": [
+    "disorderly",
+    "wild",
+    "rowdy"
+   ],
+   "antonyms": [
+    "obedient",
+    "well-behaved"
+   ],
+   "sentence": "The supply teacher struggled with the unruly class."
+  },
+  {
+   "word": "hark",
+   "meaning": "to listen carefully",
+   "synonyms": [
+    "listen",
+    "hear",
+    "heed"
+   ],
+   "antonyms": [
+    "ignore"
+   ],
+   "sentence": "Hark! Can you hear the carol singers?"
+  },
+  {
+   "word": "torrential",
+   "meaning": "falling very heavily and fast, usually rain",
+   "synonyms": [
+    "heavy",
+    "pouring"
+   ],
+   "antonyms": [
+    "light",
+    "gentle"
+   ],
+   "sentence": "The torrential rain flooded the streets within an hour."
+  },
+  {
+   "word": "circumstantial",
+   "meaning": "based on clues rather than direct proof",
+   "synonyms": [
+    "indirect",
+    "inferred"
+   ],
+   "antonyms": [
+    "direct"
+   ],
+   "sentence": "The detective said the evidence was only circumstantial."
+  },
+  {
+   "word": "potential",
+   "meaning": "the ability to develop into something better in the future",
+   "synonyms": [
+    "promise",
+    "ability",
+    "capability"
+   ],
+   "antonyms": [],
+   "sentence": "She has the potential to become a great musician."
+  },
+  {
+   "word": "acclaimed",
+   "meaning": "highly praised by many people",
+   "synonyms": [
+    "praised",
+    "celebrated",
+    "admired"
+   ],
+   "antonyms": [
+    "criticised",
+    "unknown"
+   ],
+   "sentence": "The acclaimed author won an award for her novel."
+  },
+  {
+   "word": "commotion",
+   "meaning": "a noisy, confused disturbance",
+   "synonyms": [
+    "fuss",
+    "uproar",
+    "chaos"
+   ],
+   "antonyms": [
+    "calm",
+    "peace"
+   ],
+   "sentence": "There was a sudden commotion in the hallway when the fire alarm went off."
+  },
+  {
+   "word": "enhance",
+   "meaning": "to improve something or make it better",
+   "synonyms": [
+    "improve",
+    "boost"
+   ],
+   "antonyms": [
+    "worsen",
+    "spoil"
+   ],
+   "sentence": "Fairy lights will enhance the decorations."
+  },
+  {
+   "word": "hazardous",
+   "meaning": "dangerous or risky",
+   "synonyms": [
+    "dangerous",
+    "risky",
+    "unsafe"
+   ],
+   "antonyms": [
+    "safe",
+    "harmless"
+   ],
+   "sentence": "The trail can be hazardous during a storm."
+  },
+  {
+   "word": "meander",
+   "meaning": "to wander slowly, twisting and turning",
+   "synonyms": [
+    "wander",
+    "ramble",
+    "roam"
+   ],
+   "antonyms": [
+    "rush",
+    "hurry"
+   ],
+   "sentence": "The river seemed to meander lazily through the valley."
+  },
+  {
+   "word": "rationale",
+   "meaning": "the reason or explanation behind something",
+   "synonyms": [
+    "reason",
+    "explanation",
+    "logic"
+   ],
+   "antonyms": [],
+   "sentence": "The rationale behind the new rule was to keep everyone safe."
+  },
+  {
+   "word": "recede",
+   "meaning": "to move back or away",
+   "synonyms": [
+    "retreat",
+    "withdraw",
+    "ebb"
+   ],
+   "antonyms": [
+    "advance",
+    "approach"
+   ],
+   "sentence": "As the floodwater began to recede, we could see the road again."
+  },
+  {
+   "word": "reiterate",
+   "meaning": "to say something again to make it clear",
+   "synonyms": [
+    "repeat",
+    "restate"
+   ],
+   "antonyms": [],
+   "sentence": "Let me reiterate the main points so everyone understands."
+  },
+  {
+   "word": "reacquaint",
+   "meaning": "to get to know someone or something again",
+   "synonyms": [
+    "reconnect"
+   ],
+   "antonyms": [
+    "forget"
+   ],
+   "sentence": "After years away, he needed to reacquaint himself with his hometown."
+  },
+  {
+   "word": "irrefutable",
+   "meaning": "impossible to prove wrong",
+   "synonyms": [
+    "undeniable",
+    "indisputable",
+    "certain"
+   ],
+   "antonyms": [
+    "doubtful",
+    "questionable"
+   ],
+   "sentence": "The fingerprints were irrefutable proof that he was there."
+  },
+  {
+   "word": "adamant",
+   "meaning": "refusing to change your mind",
+   "synonyms": [
+    "determined",
+    "firm",
+    "insistent"
+   ],
+   "antonyms": [
+    "unsure",
+    "uncertain"
+   ],
+   "sentence": "The headteacher was adamant that everyone must wear the correct uniform."
+  },
+  {
+   "word": "aggravate",
+   "meaning": "to make a problem or injury worse, or to annoy",
+   "synonyms": [
+    "worsen",
+    "irritate",
+    "annoy"
+   ],
+   "antonyms": [
+    "improve",
+    "ease",
+    "soothe"
+   ],
+   "sentence": "Scratching a mosquito bite will aggravate the itch."
+  },
+  {
+   "word": "condense",
+   "meaning": "to make something shorter or more compact",
+   "synonyms": [
+    "shorten",
+    "compress",
+    "summarise"
+   ],
+   "antonyms": [
+    "expand",
+    "lengthen"
+   ],
+   "sentence": "The editor asked the author to condense the long story into two pages."
+  },
+  {
+   "word": "conquer",
+   "meaning": "to defeat or take control of",
+   "synonyms": [
+    "defeat",
+    "overcome",
+    "beat"
+   ],
+   "antonyms": [
+    "surrender",
+    "yield"
+   ],
+   "sentence": "The knights set out to conquer the castle."
+  },
+  {
+   "word": "enthuse",
+   "meaning": "to talk about something with great excitement",
+   "synonyms": [
+    "rave",
+    "gush"
+   ],
+   "antonyms": [
+    "discourage"
+   ],
+   "sentence": "She loves to enthuse about her favourite books."
+  },
+  {
+   "word": "envious",
+   "meaning": "wanting something that someone else has",
+   "synonyms": [
+    "jealous",
+    "resentful"
+   ],
+   "antonyms": [
+    "content",
+    "satisfied"
+   ],
+   "sentence": "I felt envious when my friend got a new bike."
+  },
+  {
+   "word": "illuminate",
+   "meaning": "to light something up",
+   "synonyms": [
+    "light up",
+    "brighten"
+   ],
+   "antonyms": [
+    "darken",
+    "dim"
+   ],
+   "sentence": "A single candle can illuminate the whole room."
+  },
+  {
+   "word": "morbid",
+   "meaning": "very interested in unpleasant things like death",
+   "synonyms": [
+    "gloomy",
+    "gruesome",
+    "macabre"
+   ],
+   "antonyms": [
+    "cheerful",
+    "wholesome"
+   ],
+   "sentence": "He had a morbid fascination with spooky ghost stories."
+  },
+  {
+   "word": "strategically",
+   "meaning": "in a carefully planned way to reach a goal",
+   "synonyms": [
+    "tactically",
+    "cleverly",
+    "deliberately"
+   ],
+   "antonyms": [
+    "randomly",
+    "carelessly"
+   ],
+   "sentence": "She placed her chess pieces strategically to trap the king."
+  },
+  {
+   "word": "turbulent",
+   "meaning": "wild, rough and unsettled",
+   "synonyms": [
+    "stormy",
+    "rough",
+    "chaotic"
+   ],
+   "antonyms": [
+    "calm",
+    "peaceful",
+    "smooth"
+   ],
+   "sentence": "The aeroplane shook as it passed through turbulent air."
+  },
+  {
+   "word": "gregarious",
+   "meaning": "loving to be with other people",
+   "synonyms": [
+    "sociable",
+    "outgoing",
+    "friendly"
+   ],
+   "antonyms": [
+    "shy",
+    "solitary"
+   ],
+   "sentence": "Max was so gregarious that he made lots of new friends at the party."
+  },
+  {
+   "word": "berated",
+   "meaning": "told off angrily",
+   "synonyms": [
+    "scolded",
+    "reprimanded",
+    "rebuked"
+   ],
+   "antonyms": [
+    "praised",
+    "complimented"
+   ],
+   "sentence": "The teacher berated the two boys for smashing the window."
+  },
+  {
+   "word": "belligerent",
+   "meaning": "aggressive and ready to fight or argue",
+   "synonyms": [
+    "aggressive",
+    "hostile",
+    "quarrelsome"
+   ],
+   "antonyms": [
+    "peaceful",
+    "friendly"
+   ],
+   "sentence": "The belligerent goose chased everyone out of the park."
+  },
+  {
+   "word": "inquisitive",
+   "meaning": "curious and eager to find things out",
+   "synonyms": [
+    "curious",
+    "nosy",
+    "questioning"
+   ],
+   "antonyms": [
+    "uninterested"
+   ],
+   "sentence": "Mia was inquisitive about how volcanoes work."
+  },
+  {
+   "word": "garments",
+   "meaning": "pieces of clothing",
+   "synonyms": [
+    "clothes",
+    "clothing",
+    "outfits"
+   ],
+   "antonyms": [],
+   "sentence": "My grandma knits cosy garments for the winter."
+  },
+  {
+   "word": "applicable",
+   "meaning": "relevant or suitable for a situation",
+   "synonyms": [
+    "relevant",
+    "suitable",
+    "appropriate"
+   ],
+   "antonyms": [
+    "irrelevant",
+    "unsuitable"
+   ],
+   "sentence": "The rule about uniform is not applicable on non-uniform day."
+  },
+  {
+   "word": "cushion",
+   "meaning": "a soft pad for sitting on or leaning against",
+   "synonyms": [
+    "pillow",
+    "pad",
+    "bolster"
+   ],
+   "antonyms": [],
+   "sentence": "She rested her head on a fluffy cushion."
+  },
+  {
+   "word": "sheer",
+   "meaning": "complete and total",
+   "synonyms": [
+    "utter",
+    "complete",
+    "total"
+   ],
+   "antonyms": [
+    "partial"
+   ],
+   "sentence": "It was sheer luck that we found the lost ring."
+  },
+  {
+   "word": "weedy",
+   "meaning": "thin and weak-looking",
+   "synonyms": [
+    "puny",
+    "feeble",
+    "scrawny"
+   ],
+   "antonyms": [
+    "strong",
+    "sturdy",
+    "brawny"
+   ],
+   "sentence": "The weedy little plant needed more sunlight."
+  },
+  {
+   "word": "benign",
+   "meaning": "kind and gentle, not harmful",
+   "synonyms": [
+    "kind",
+    "gentle",
+    "harmless"
+   ],
+   "antonyms": [
+    "harmful",
+    "cruel",
+    "hostile"
+   ],
+   "sentence": "The old dog had a benign face and never barked."
+  },
+  {
+   "word": "dear",
+   "meaning": "loved very much, or expensive",
+   "synonyms": [
+    "beloved",
+    "precious",
+    "expensive",
+    "costly"
+   ],
+   "antonyms": [
+    "cheap"
+   ],
+   "sentence": "The toys were so dear that we could only buy one."
+  },
+  {
+   "word": "flee",
+   "meaning": "to run away from danger",
+   "synonyms": [
+    "escape",
+    "run away",
+    "bolt"
+   ],
+   "antonyms": [
+    "stay",
+    "remain"
+   ],
+   "sentence": "The robber tried to flee in a stolen car."
+  },
+  {
+   "word": "notice",
+   "meaning": "to see or become aware of something",
+   "synonyms": [
+    "spot",
+    "observe",
+    "see"
+   ],
+   "antonyms": [
+    "ignore",
+    "overlook",
+    "miss"
+   ],
+   "sentence": "Did you notice the rainbow after the storm?"
+  },
+  {
+   "word": "candid",
+   "meaning": "honest and saying what you really think",
+   "synonyms": [
+    "honest",
+    "frank",
+    "open",
+    "truthful"
+   ],
+   "antonyms": [
+    "dishonest",
+    "secretive"
+   ],
+   "sentence": "I had a candid chat with my mum about my worries."
+  },
+  {
+   "word": "obnoxious",
+   "meaning": "very rude and unpleasant",
+   "synonyms": [
+    "unpleasant",
+    "annoying",
+    "nasty"
+   ],
+   "antonyms": [
+    "pleasant",
+    "charming",
+    "delightful"
+   ],
+   "sentence": "The obnoxious boy kept kicking the back of my chair."
+  },
+  {
+   "word": "lass",
+   "meaning": "a girl or young woman",
+   "synonyms": [
+    "girl",
+    "maiden"
+   ],
+   "antonyms": [
+    "lad"
+   ],
+   "sentence": "The lass was doing her homework quietly."
+  },
+  {
+   "word": "crib",
+   "meaning": "a baby's bed with high sides",
+   "synonyms": [
+    "cot",
+    "cradle"
+   ],
+   "antonyms": [],
+   "sentence": "The baby slept soundly in her crib."
+  },
+  {
+   "word": "spiteful",
+   "meaning": "wanting to hurt or upset someone on purpose",
+   "synonyms": [
+    "mean",
+    "nasty",
+    "malicious"
+   ],
+   "antonyms": [
+    "kind",
+    "caring",
+    "generous"
+   ],
+   "sentence": "It was spiteful of him to tear up her drawing."
+  },
+  {
+   "word": "investment",
+   "meaning": "putting money, time or effort into something to get a reward later",
+   "synonyms": [
+    "contribution",
+    "commitment",
+    "stake"
+   ],
+   "antonyms": [],
+   "sentence": "Learning to read is the best investment you can make."
+  },
+  {
+   "word": "finance",
+   "meaning": "the management of money",
+   "synonyms": [
+    "money",
+    "funding",
+    "economics"
+   ],
+   "antonyms": [],
+   "sentence": "My uncle works in finance and helps people plan their savings."
+  },
+  {
+   "word": "clot",
+   "meaning": "a thick lump, especially of blood",
+   "synonyms": [
+    "lump",
+    "clump",
+    "mass"
+   ],
+   "antonyms": [],
+   "sentence": "A clot of blood formed over the cut on her knee."
+  },
+  {
+   "word": "hinder",
+   "meaning": "to make something harder or slower",
+   "synonyms": [
+    "obstruct",
+    "hamper",
+    "block"
+   ],
+   "antonyms": [
+    "help",
+    "assist",
+    "aid"
+   ],
+   "sentence": "The heavy rain will hinder the builders' work."
+  },
+  {
+   "word": "insipid",
+   "meaning": "having no flavour or interest; bland",
+   "synonyms": [
+    "bland",
+    "tasteless",
+    "dull"
+   ],
+   "antonyms": [
+    "tasty",
+    "flavourful",
+    "exciting"
+   ],
+   "sentence": "The soup was so insipid that we added lots of salt."
+  },
+  {
+   "word": "portable",
+   "meaning": "easy to carry around",
+   "synonyms": [
+    "movable",
+    "mobile",
+    "transportable"
+   ],
+   "antonyms": [
+    "fixed",
+    "immovable"
+   ],
+   "sentence": "We took a portable speaker on our picnic."
+  },
+  {
+   "word": "ballad",
+   "meaning": "a song or poem that tells a story",
+   "synonyms": [
+    "song",
+    "poem",
+    "folk song"
+   ],
+   "antonyms": [],
+   "sentence": "In class we listened to a ballad about two brave sailors."
+  },
+  {
+   "word": "civil",
+   "meaning": "polite and respectful",
+   "synonyms": [
+    "polite",
+    "courteous",
+    "respectful"
+   ],
+   "antonyms": [
+    "rude",
+    "impolite"
+   ],
+   "sentence": "Even though she was cross, Sam stayed civil to everyone."
+  },
+  {
+   "word": "poverty",
+   "meaning": "the state of being very poor",
+   "synonyms": [
+    "hardship",
+    "need",
+    "want"
+   ],
+   "antonyms": [
+    "wealth",
+    "riches",
+    "luxury"
+   ],
+   "sentence": "Many families living in poverty cannot afford enough food."
+  },
+  {
+   "word": "gloat",
+   "meaning": "to show off happily about your own success or someone else's failure",
+   "synonyms": [
+    "brag",
+    "crow",
+    "show off"
+   ],
+   "antonyms": [],
+   "sentence": "He did not gloat after winning; instead, he congratulated everyone."
+  },
+  {
+   "word": "hoard",
+   "meaning": "to collect and hide away a big store of something",
+   "synonyms": [
+    "stockpile",
+    "store",
+    "stash"
+   ],
+   "antonyms": [
+    "share",
+    "give away"
+   ],
+   "sentence": "Squirrels hoard nuts to eat during the winter."
+  },
+  {
+   "word": "modest",
+   "meaning": "not boasting about yourself",
+   "synonyms": [
+    "humble",
+    "unassuming"
+   ],
+   "antonyms": [
+    "boastful",
+    "arrogant",
+    "conceited"
+   ],
+   "sentence": "She was modest about winning the art prize."
+  },
+  {
+   "word": "boastful",
+   "meaning": "showing off about yourself too much",
+   "synonyms": [
+    "bragging",
+    "arrogant",
+    "cocky"
+   ],
+   "antonyms": [
+    "modest",
+    "humble"
+   ],
+   "sentence": "The boastful boy told everyone he was the fastest runner."
+  },
+  {
+   "word": "savage",
+   "meaning": "fierce, violent and wild",
+   "synonyms": [
+    "fierce",
+    "vicious",
+    "brutal",
+    "ferocious"
+   ],
+   "antonyms": [
+    "gentle",
+    "tame",
+    "mild"
+   ],
+   "sentence": "The savage storm destroyed the fence."
+  },
+  {
+   "word": "mandolin",
+   "meaning": "a small stringed musical instrument with a rounded back",
+   "synonyms": [],
+   "antonyms": [],
+   "sentence": "She played a soft tune on her mandolin."
+  },
+  {
+   "word": "sashay",
+   "meaning": "to walk in a showy, confident way",
+   "synonyms": [
+    "strut",
+    "swagger",
+    "parade"
+   ],
+   "antonyms": [
+    "slink",
+    "shuffle"
+   ],
+   "sentence": "She liked to sashay into the room like a film star."
+  },
+  {
+   "word": "soiree",
+   "meaning": "an elegant evening party",
+   "synonyms": [
+    "party",
+    "gathering",
+    "reception"
+   ],
+   "antonyms": [],
+   "sentence": "They hosted a summer soiree in their garden."
+  },
+  {
+   "word": "arduous",
+   "meaning": "very hard and tiring, needing lots of effort",
+   "synonyms": [
+    "difficult",
+    "tough",
+    "exhausting",
+    "strenuous"
+   ],
+   "antonyms": [
+    "easy",
+    "effortless",
+    "simple"
+   ],
+   "sentence": "Climbing the mountain was an arduous task."
+  },
+  {
+   "word": "dissonant",
+   "meaning": "harsh-sounding because the notes clash",
+   "synonyms": [
+    "discordant",
+    "jarring",
+    "clashing"
+   ],
+   "antonyms": [
+    "harmonious",
+    "melodious",
+    "tuneful"
+   ],
+   "sentence": "The dissonant notes made the dog howl."
+  },
+  {
+   "word": "mixture",
+   "meaning": "things combined or blended together",
+   "synonyms": [
+    "blend",
+    "combination",
+    "mix",
+    "assortment"
+   ],
+   "antonyms": [],
+   "sentence": "The soup was a mixture of vegetables and spices."
+  },
+  {
+   "word": "cacophony",
+   "meaning": "a loud, harsh mix of unpleasant sounds",
+   "synonyms": [
+    "racket",
+    "noise",
+    "clamour"
+   ],
+   "antonyms": [
+    "harmony",
+    "silence"
+   ],
+   "sentence": "The cacophony of car horns made me cover my ears."
+  },
+  {
+   "word": "overenthused",
+   "meaning": "far too excited about something",
+   "synonyms": [
+    "overexcited",
+    "overeager",
+    "carried away"
+   ],
+   "antonyms": [
+    "unenthusiastic",
+    "indifferent"
+   ],
+   "sentence": "He was so overenthused about the trip that he packed a week early."
+  },
+  {
+   "word": "humorous",
+   "meaning": "funny and amusing",
+   "synonyms": [
+    "funny",
+    "amusing",
+    "comical",
+    "witty"
+   ],
+   "antonyms": [
+    "serious",
+    "solemn"
+   ],
+   "sentence": "I love her stories because they are so humorous."
+  },
+  {
+   "word": "incessantly",
+   "meaning": "without stopping",
+   "synonyms": [
+    "constantly",
+    "endlessly",
+    "nonstop"
+   ],
+   "antonyms": [
+    "occasionally",
+    "rarely"
+   ],
+   "sentence": "The puppy barked incessantly all night."
+  },
+  {
+   "word": "torment",
+   "meaning": "great pain or suffering",
+   "synonyms": [
+    "agony",
+    "suffering",
+    "torture"
+   ],
+   "antonyms": [
+    "comfort",
+    "relief"
+   ],
+   "sentence": "Waiting for the test results was pure torment."
+  },
+  {
+   "word": "gusto",
+   "meaning": "great enjoyment and energy",
+   "synonyms": [
+    "enthusiasm",
+    "zest",
+    "relish"
+   ],
+   "antonyms": [
+    "reluctance",
+    "apathy"
+   ],
+   "sentence": "He ate the chocolate cake with great gusto."
+  },
+  {
+   "word": "greasy",
+   "meaning": "covered in oil or fat",
+   "synonyms": [
+    "oily",
+    "fatty",
+    "slippery"
+   ],
+   "antonyms": [
+    "dry"
+   ],
+   "sentence": "My hands were greasy after eating the chips."
+  },
+  {
+   "word": "dame",
+   "meaning": "a woman given a special title for great achievements",
+   "synonyms": [
+    "lady",
+    "noblewoman"
+   ],
+   "antonyms": [],
+   "sentence": "The famous actress was made a dame by the King."
+  },
+  {
+   "word": "plume",
+   "meaning": "a large, fluffy feather, or a tall cloud of smoke",
+   "synonyms": [
+    "feather",
+    "quill"
+   ],
+   "antonyms": [],
+   "sentence": "A plume of smoke rose from the chimney."
+  },
+  {
+   "word": "prop",
+   "meaning": "to hold something up with a support",
+   "synonyms": [
+    "support",
+    "brace",
+    "hold up"
+   ],
+   "antonyms": [],
+   "sentence": "We used a book to prop the door open."
+  },
+  {
+   "word": "mast",
+   "meaning": "the tall pole on a ship that holds up the sails",
+   "synonyms": [
+    "pole",
+    "post",
+    "spar"
+   ],
+   "antonyms": [],
+   "sentence": "The pirate climbed the mast to look out for land."
+  },
+  {
+   "word": "mace",
+   "meaning": "a heavy club with a spiked metal head",
+   "synonyms": [
+    "club",
+    "cudgel"
+   ],
+   "antonyms": [],
+   "sentence": "The knight carried a heavy mace into battle."
+  },
+  {
+   "word": "fret",
+   "meaning": "to worry about something",
+   "synonyms": [
+    "worry",
+    "stress",
+    "agonise"
+   ],
+   "antonyms": [
+    "relax"
+   ],
+   "sentence": "Don't fret about the test; you've practised loads."
+  },
+  {
+   "word": "stoop",
+   "meaning": "to bend your body forwards and down",
+   "synonyms": [
+    "bend",
+    "crouch",
+    "bow",
+    "hunch"
+   ],
+   "antonyms": [
+    "straighten"
+   ],
+   "sentence": "Grandpa had to stoop to pick up his glasses."
+  },
+  {
+   "word": "rant",
+   "meaning": "to speak loudly and angrily for a long time",
+   "synonyms": [
+    "rave",
+    "rage",
+    "shout"
+   ],
+   "antonyms": [],
+   "sentence": "The teacher began to rant about the messy classroom."
+  },
+  {
+   "word": "ceremony",
+   "meaning": "a formal event to celebrate or mark something special",
+   "synonyms": [
+    "ritual",
+    "celebration",
+    "service"
+   ],
+   "antonyms": [],
+   "sentence": "The wedding ceremony took place in a beautiful garden."
+  },
+  {
+   "word": "excessive",
+   "meaning": "much more than is needed or normal",
+   "synonyms": [
+    "extreme",
+    "unreasonable",
+    "too much"
+   ],
+   "antonyms": [
+    "moderate",
+    "reasonable"
+   ],
+   "sentence": "Eating an excessive amount of sweets will give you toothache."
+  },
+  {
+   "word": "essential",
+   "meaning": "absolutely necessary",
+   "synonyms": [
+    "vital",
+    "necessary",
+    "crucial"
+   ],
+   "antonyms": [
+    "unnecessary",
+    "optional"
+   ],
+   "sentence": "Water is essential for all living things."
+  },
+  {
+   "word": "ravenous",
+   "meaning": "extremely hungry",
+   "synonyms": [
+    "starving",
+    "famished"
+   ],
+   "antonyms": [
+    "full",
+    "stuffed"
+   ],
+   "sentence": "After football practice, I was ravenous."
+  },
+  {
+   "word": "adept",
+   "meaning": "very skilled at something",
+   "synonyms": [
+    "skilful",
+    "expert",
+    "talented"
+   ],
+   "antonyms": [
+    "inept",
+    "clumsy",
+    "unskilled"
+   ],
+   "sentence": "She is adept at solving tricky puzzles."
+  },
+  {
+   "word": "gradual",
+   "meaning": "happening slowly, bit by bit",
+   "synonyms": [
+    "slow",
+    "steady",
+    "step-by-step"
+   ],
+   "antonyms": [
+    "sudden",
+    "abrupt"
+   ],
+   "sentence": "There was a gradual change in the weather as autumn arrived."
+  },
+  {
+   "word": "inept",
+   "meaning": "having no skill; clumsy",
+   "synonyms": [
+    "clumsy",
+    "incompetent",
+    "unskilled"
+   ],
+   "antonyms": [
+    "adept",
+    "skilful",
+    "capable"
+   ],
+   "sentence": "The inept magician dropped all his cards."
+  },
+  {
+   "word": "wrath",
+   "meaning": "extreme anger",
+   "synonyms": [
+    "fury",
+    "rage",
+    "anger"
+   ],
+   "antonyms": [
+    "calm"
+   ],
+   "sentence": "The giant roared with wrath when he saw Jack."
+  },
+  {
+   "word": "companion",
+   "meaning": "a friend or someone you spend time with",
+   "synonyms": [
+    "friend",
+    "partner",
+    "pal"
+   ],
+   "antonyms": [
+    "enemy",
+    "rival"
+   ],
+   "sentence": "The golden ticket let Charlie bring one companion to the factory."
+  },
+  {
+   "word": "amiable",
+   "meaning": "friendly and pleasant",
+   "synonyms": [
+    "friendly",
+    "pleasant",
+    "likeable"
+   ],
+   "antonyms": [
+    "unfriendly",
+    "hostile",
+    "grumpy"
+   ],
+   "sentence": "Papa is so amiable that everyone loves him."
+  },
+  {
+   "word": "aloof",
+   "meaning": "unfriendly and distant",
+   "synonyms": [
+    "distant",
+    "cold",
+    "standoffish"
+   ],
+   "antonyms": [
+    "friendly",
+    "warm"
+   ],
+   "sentence": "The new girl seemed aloof, but she was just shy."
+  },
+  {
+   "word": "impartial",
+   "meaning": "fair and not taking sides",
+   "synonyms": [
+    "fair",
+    "neutral",
+    "unbiased"
+   ],
+   "antonyms": [
+    "biased",
+    "unfair"
+   ],
+   "sentence": "In sports, the referee should always be impartial."
+  },
+  {
+   "word": "dissuade",
+   "meaning": "to persuade someone not to do something",
+   "synonyms": [
+    "discourage",
+    "deter",
+    "put off"
+   ],
+   "antonyms": [
+    "persuade",
+    "encourage",
+    "convince"
+   ],
+   "sentence": "Mum tried to dissuade us from going out in the storm."
+  },
+  {
+   "word": "flex",
+   "meaning": "to bend or stretch part of your body",
+   "synonyms": [
+    "bend",
+    "stretch",
+    "tense"
+   ],
+   "antonyms": [
+    "straighten",
+    "relax"
+   ],
+   "sentence": "The gymnast likes to flex her muscles before a routine."
+  },
+  {
+   "word": "flounder",
+   "meaning": "to struggle clumsily, or to be confused",
+   "synonyms": [
+    "struggle",
+    "stumble",
+    "flail"
+   ],
+   "antonyms": [
+    "succeed",
+    "thrive"
+   ],
+   "sentence": "The puppy began to flounder in the muddy puddle."
+  },
+  {
+   "word": "genuine",
+   "meaning": "real and true, not fake",
+   "synonyms": [
+    "real",
+    "authentic",
+    "sincere"
+   ],
+   "antonyms": [
+    "fake",
+    "false",
+    "counterfeit"
+   ],
+   "sentence": "Is that a genuine diamond or just glass?"
+  },
+  {
+   "word": "overzealous",
+   "meaning": "far too keen or eager, in an annoying way",
+   "synonyms": [
+    "overeager",
+    "fanatical"
+   ],
+   "antonyms": [
+    "half-hearted"
+   ],
+   "sentence": "The overzealous goalkeeper ran right out of his goal."
+  },
+  {
+   "word": "timid",
+   "meaning": "shy and easily frightened",
+   "synonyms": [
+    "shy",
+    "nervous",
+    "fearful",
+    "bashful"
+   ],
+   "antonyms": [
+    "bold",
+    "brave",
+    "confident"
+   ],
+   "sentence": "The timid mouse hid behind the cupboard."
+  },
+  {
+   "word": "foster",
+   "meaning": "to encourage something to grow, or to look after a child who isn't yours",
+   "synonyms": [
+    "encourage",
+    "nurture",
+    "promote"
+   ],
+   "antonyms": [
+    "discourage",
+    "neglect"
+   ],
+   "sentence": "Our school tries to foster a love of reading."
+  },
+  {
+   "word": "sociable",
+   "meaning": "friendly and enjoying the company of others",
+   "synonyms": [
+    "friendly",
+    "outgoing",
+    "gregarious"
+   ],
+   "antonyms": [
+    "unsociable",
+    "shy",
+    "aloof"
+   ],
+   "sentence": "Leo is very sociable and loves going to parties."
+  },
+  {
+   "word": "adopt",
+   "meaning": "to take something on as your own, or to take a child into your family",
+   "synonyms": [
+    "take on",
+    "embrace",
+    "choose"
+   ],
+   "antonyms": [
+    "reject",
+    "abandon"
+   ],
+   "sentence": "Our class decided to adopt a hedgehog at the wildlife centre."
+  },
+  {
+   "word": "undo",
+   "meaning": "to unfasten or reverse something",
+   "synonyms": [
+    "unfasten",
+    "untie",
+    "reverse"
+   ],
+   "antonyms": [
+    "fasten",
+    "tie",
+    "do up"
+   ],
+   "sentence": "Please can you undo my shoelaces?"
+  },
+  {
+   "word": "adhere",
+   "meaning": "to stick firmly, or to follow rules closely",
+   "synonyms": [
+    "stick",
+    "follow",
+    "obey"
+   ],
+   "antonyms": [
+    "disobey",
+    "ignore"
+   ],
+   "sentence": "Please adhere to the instructions during the test."
+  },
+  {
+   "word": "envisage",
+   "meaning": "to picture something in your mind",
+   "synonyms": [
+    "imagine",
+    "picture",
+    "visualise"
+   ],
+   "antonyms": [],
+   "sentence": "I envisage myself winning a gold medal one day."
+  },
+  {
+   "word": "originate",
+   "meaning": "to begin or come from somewhere",
+   "synonyms": [
+    "begin",
+    "start",
+    "arise",
+    "stem"
+   ],
+   "antonyms": [
+    "end",
+    "finish"
+   ],
+   "sentence": "Pizza is thought to originate from Italy."
+  },
+  {
+   "word": "former",
+   "meaning": "from before; earlier",
+   "synonyms": [
+    "previous",
+    "past",
+    "earlier"
+   ],
+   "antonyms": [
+    "current",
+    "present",
+    "future"
+   ],
+   "sentence": "He was the former captain of the football team."
+  },
+  {
+   "word": "sophisticated",
+   "meaning": "clever and complicated, or stylish and grown-up",
+   "synonyms": [
+    "advanced",
+    "complex",
+    "refined"
+   ],
+   "antonyms": [
+    "simple",
+    "basic",
+    "crude"
+   ],
+   "sentence": "The spaceship had a very sophisticated computer."
+  },
+  {
+   "word": "apex",
+   "meaning": "the very top or highest point",
+   "synonyms": [
+    "peak",
+    "summit",
+    "top",
+    "pinnacle"
+   ],
+   "antonyms": [
+    "bottom",
+    "base"
+   ],
+   "sentence": "The climbers finally reached the apex of the mountain."
+  },
+  {
+   "word": "cultivated",
+   "meaning": "grown and looked after carefully, or well-educated and polite",
+   "synonyms": [
+    "farmed",
+    "grown",
+    "refined",
+    "cultured"
+   ],
+   "antonyms": [
+    "wild",
+    "uncultivated"
+   ],
+   "sentence": "The cultivated fields were full of golden wheat."
+  },
+  {
+   "word": "compact",
+   "meaning": "small and neatly fitted into a small space",
+   "synonyms": [
+    "small",
+    "neat",
+    "dense"
+   ],
+   "antonyms": [
+    "large",
+    "bulky",
+    "spacious"
+   ],
+   "sentence": "Our compact car fits into tiny parking spaces."
+  },
+  {
+   "word": "tampered",
+   "meaning": "interfered with something to damage or change it",
+   "synonyms": [
+    "meddled",
+    "interfered",
+    "fiddled"
+   ],
+   "antonyms": [],
+   "sentence": "Someone had tampered with the lock on the shed."
+  },
+  {
+   "word": "exhume",
+   "meaning": "to dig something up from the ground",
+   "synonyms": [
+    "dig up",
+    "unearth",
+    "excavate"
+   ],
+   "antonyms": [
+    "bury"
+   ],
+   "sentence": "The archaeologists hoped to exhume the ancient bones."
+  },
+  {
+   "word": "subsidise",
+   "meaning": "to pay part of the cost of something",
+   "synonyms": [
+    "fund",
+    "support",
+    "sponsor"
+   ],
+   "antonyms": [],
+   "sentence": "The council helps to subsidise school trips."
+  },
+  {
+   "word": "bargain",
+   "meaning": "something bought for less than its usual price",
+   "synonyms": [
+    "deal",
+    "discount",
+    "snip"
+   ],
+   "antonyms": [
+    "rip-off"
+   ],
+   "sentence": "The jacket was a real bargain in the sale."
+  },
+  {
+   "word": "carat",
+   "meaning": "a unit for measuring how pure gold is, or how heavy a gemstone is",
+   "synonyms": [],
+   "antonyms": [],
+   "sentence": "Her ring was made of 18-carat gold."
+  },
+  {
+   "word": "gaunt",
+   "meaning": "very thin and bony, from hunger or illness",
+   "synonyms": [
+    "bony",
+    "skinny",
+    "haggard"
+   ],
+   "antonyms": [
+    "plump",
+    "chubby"
+   ],
+   "sentence": "The castaway looked gaunt after weeks on the island."
+  },
+  {
+   "word": "flaunt",
+   "meaning": "to show off something proudly",
+   "synonyms": [
+    "show off",
+    "display",
+    "parade"
+   ],
+   "antonyms": [
+    "hide",
+    "conceal"
+   ],
+   "sentence": "She loves to flaunt her new trainers at school."
+  },
+  {
+   "word": "ostentatious",
+   "meaning": "showy and designed to impress",
+   "synonyms": [
+    "showy",
+    "flashy",
+    "flamboyant"
+   ],
+   "antonyms": [
+    "modest",
+    "plain",
+    "simple"
+   ],
+   "sentence": "The king's palace was ostentatious, covered in gold."
+  },
+  {
+   "word": "scorching",
+   "meaning": "extremely hot",
+   "synonyms": [
+    "boiling",
+    "sweltering",
+    "blazing"
+   ],
+   "antonyms": [
+    "freezing",
+    "icy"
+   ],
+   "sentence": "It was scorching in Egypt in the summer."
+  },
+  {
+   "word": "divert",
+   "meaning": "to change the direction or route of something",
+   "synonyms": [
+    "redirect",
+    "reroute",
+    "turn aside"
+   ],
+   "antonyms": [],
+   "sentence": "Roadworks will divert the traffic through the town."
+  },
+  {
+   "word": "nimble",
+   "meaning": "quick and light in movement",
+   "synonyms": [
+    "agile",
+    "quick",
+    "sprightly"
+   ],
+   "antonyms": [
+    "clumsy",
+    "slow",
+    "awkward"
+   ],
+   "sentence": "The nimble squirrel leapt from branch to branch."
+  },
+  {
+   "word": "inferior",
+   "meaning": "lower in quality or importance",
+   "synonyms": [
+    "worse",
+    "poorer",
+    "lesser"
+   ],
+   "antonyms": [
+    "superior",
+    "better"
+   ],
+   "sentence": "This cheap pen is inferior to my old one."
+  },
+  {
+   "word": "outlook",
+   "meaning": "a person's point of view, or what is likely to happen",
+   "synonyms": [
+    "view",
+    "attitude",
+    "prospect"
+   ],
+   "antonyms": [],
+   "sentence": "She has a cheerful outlook on life."
+  },
+  {
+   "word": "watertight",
+   "meaning": "not letting any water in",
+   "synonyms": [
+    "waterproof",
+    "sealed"
+   ],
+   "antonyms": [
+    "leaky"
+   ],
+   "sentence": "The tent was watertight, so we stayed dry."
+  },
+  {
+   "word": "penknife",
+   "meaning": "a small knife that folds into its handle",
+   "synonyms": [
+    "pocketknife",
+    "jackknife"
+   ],
+   "antonyms": [],
+   "sentence": "Grandad keeps a penknife for whittling wood."
+  },
+  {
+   "word": "proclaim",
+   "meaning": "to announce something publicly",
+   "synonyms": [
+    "announce",
+    "declare",
+    "broadcast"
+   ],
+   "antonyms": [
+    "conceal",
+    "hide"
+   ],
+   "sentence": "The king will proclaim a holiday for everyone."
+  },
+  {
+   "word": "procure",
+   "meaning": "to get something, especially with effort",
+   "synonyms": [
+    "obtain",
+    "get",
+    "acquire"
+   ],
+   "antonyms": [
+    "lose"
+   ],
+   "sentence": "The team managed to procure tickets for the final."
+  },
+  {
+   "word": "lubricate",
+   "meaning": "to put oil or grease on something so it moves smoothly",
+   "synonyms": [
+    "oil",
+    "grease"
+   ],
+   "antonyms": [],
+   "sentence": "Papa used oil to lubricate my bike chain."
+  },
+  {
+   "word": "summit",
+   "meaning": "the top of a mountain",
+   "synonyms": [
+    "peak",
+    "top",
+    "apex",
+    "pinnacle"
+   ],
+   "antonyms": [
+    "base",
+    "bottom",
+    "foot"
+   ],
+   "sentence": "The summit of Mount Everest is freezing cold."
+  },
+  {
+   "word": "insist",
+   "meaning": "to say firmly that something must happen or is true",
+   "synonyms": [
+    "demand",
+    "maintain",
+    "urge"
+   ],
+   "antonyms": [],
+   "sentence": "I insist that you wear your coat; it's freezing!"
+  },
+  {
+   "word": "intended",
+   "meaning": "planned or meant",
+   "synonyms": [
+    "planned",
+    "meant",
+    "deliberate"
+   ],
+   "antonyms": [
+    "accidental",
+    "unintended"
+   ],
+   "sentence": "The surprise party went exactly as intended."
+  },
+  {
+   "word": "ridges",
+   "meaning": "long, narrow raised strips, like the top edge of a hill",
+   "synonyms": [
+    "crests",
+    "edges"
+   ],
+   "antonyms": [
+    "hollows",
+    "grooves"
+   ],
+   "sentence": "We walked along the ridges of the hills."
+  },
+  {
+   "word": "frantically",
+   "meaning": "in a wild, panicky way",
+   "synonyms": [
+    "wildly",
+    "desperately",
+    "madly"
+   ],
+   "antonyms": [
+    "calmly"
+   ],
+   "sentence": "She searched frantically for her missing homework."
+  },
+  {
+   "word": "eccentric",
+   "meaning": "strange and unusual in a harmless way",
+   "synonyms": [
+    "odd",
+    "quirky",
+    "peculiar"
+   ],
+   "antonyms": [
+    "normal",
+    "ordinary",
+    "conventional"
+   ],
+   "sentence": "My eccentric aunt has twenty cats and wears odd socks."
+  },
+  {
+   "word": "sawdust",
+   "meaning": "tiny bits of wood made when wood is sawn",
+   "synonyms": [
+    "wood shavings"
+   ],
+   "antonyms": [],
+   "sentence": "When Dad cut the wood, the floor was covered in sawdust."
+  },
+  {
+   "word": "carefree",
+   "meaning": "happy and without worries",
+   "synonyms": [
+    "relaxed",
+    "untroubled",
+    "happy-go-lucky"
+   ],
+   "antonyms": [
+    "worried",
+    "anxious",
+    "stressed"
+   ],
+   "sentence": "On the first day of the holidays, I felt completely carefree."
+  },
+  {
+   "word": "temporary",
+   "meaning": "lasting only for a short time",
+   "synonyms": [
+    "short-term",
+    "brief",
+    "passing"
+   ],
+   "antonyms": [
+    "permanent",
+    "lasting"
+   ],
+   "sentence": "The stick-on tattoo is only temporary."
+  },
+  {
+   "word": "spur",
+   "meaning": "to encourage someone to do something",
+   "synonyms": [
+    "encourage",
+    "prompt",
+    "urge",
+    "motivate"
+   ],
+   "antonyms": [
+    "discourage",
+    "deter"
+   ],
+   "sentence": "The cheering crowd helped spur the runners on."
+  },
+  {
+   "word": "rake",
+   "meaning": "a garden tool with a long handle and metal prongs",
+   "synonyms": [],
+   "antonyms": [],
+   "sentence": "Papa uses a rake to clear the leaves from the garden."
+  },
+  {
+   "word": "dire",
+   "meaning": "extremely serious or terrible",
+   "synonyms": [
+    "terrible",
+    "dreadful",
+    "urgent"
+   ],
+   "antonyms": [],
+   "sentence": "The people were in dire need of food and water."
+  },
+  {
+   "word": "mire",
+   "meaning": "a stretch of deep, sticky mud",
+   "synonyms": [
+    "bog",
+    "swamp",
+    "mud",
+    "marsh"
+   ],
+   "antonyms": [],
+   "sentence": "The tractor got stuck in the mire."
+  },
+  {
+   "word": "emit",
+   "meaning": "to give off light, heat, sound or gas",
+   "synonyms": [
+    "give off",
+    "release",
+    "discharge"
+   ],
+   "antonyms": [
+    "absorb",
+    "take in"
+   ],
+   "sentence": "Some cars emit lots of smoke."
+  },
+  {
+   "word": "teat",
+   "meaning": "the rubber tip on a baby's bottle",
+   "synonyms": [
+    "nipple"
+   ],
+   "antonyms": [],
+   "sentence": "The baby drank milk through the teat of her bottle."
+  },
+  {
+   "word": "gait",
+   "meaning": "the way someone walks",
+   "synonyms": [
+    "walk",
+    "stride",
+    "step"
+   ],
+   "antonyms": [],
+   "sentence": "Daddy's gait is a bit like a penguin's waddle."
+  },
+  {
+   "word": "acne",
+   "meaning": "spots on the face and body",
+   "synonyms": [
+    "spots",
+    "pimples"
+   ],
+   "antonyms": [],
+   "sentence": "Lots of teenagers get acne."
+  },
+  {
+   "word": "elms",
+   "meaning": "tall trees with rough, jagged-edged leaves",
+   "synonyms": [],
+   "antonyms": [],
+   "sentence": "There are tall elms in our school garden."
+  },
+  {
+   "word": "nag",
+   "meaning": "to keep complaining or telling someone to do something",
+   "synonyms": [
+    "pester",
+    "badger",
+    "hassle"
+   ],
+   "antonyms": [],
+   "sentence": "My sister always has to nag me to tidy my room."
+  },
+  {
+   "word": "din",
+   "meaning": "a loud, unpleasant noise that goes on and on",
+   "synonyms": [
+    "racket",
+    "noise",
+    "clamour"
+   ],
+   "antonyms": [
+    "silence",
+    "quiet",
+    "hush"
+   ],
+   "sentence": "The din of the traffic stopped me from concentrating."
+  },
+  {
+   "word": "yacht",
+   "meaning": "a boat with sails, used for racing or holidays",
+   "synonyms": [
+    "sailboat",
+    "boat",
+    "vessel"
+   ],
+   "antonyms": [],
+   "sentence": "They went sailing on a white yacht."
+  },
+  {
+   "word": "decadence",
+   "meaning": "too much enjoyment of luxury and pleasure",
+   "synonyms": [
+    "indulgence",
+    "luxury",
+    "excess"
+   ],
+   "antonyms": [
+    "restraint",
+    "simplicity"
+   ],
+   "sentence": "The feast was pure decadence, with ten different puddings."
+  },
+  {
+   "word": "idiosyncratic",
+   "meaning": "unusual and special to one person",
+   "synonyms": [
+    "quirky",
+    "peculiar",
+    "individual"
+   ],
+   "antonyms": [
+    "ordinary",
+    "common",
+    "typical"
+   ],
+   "sentence": "Grandma has an idiosyncratic way of making tea."
+  },
+  {
+   "word": "phantasmagoria",
+   "meaning": "a strange, dreamlike mix of changing images",
+   "synonyms": [
+    "fantasy",
+    "illusion",
+    "dreamscape"
+   ],
+   "antonyms": [
+    "reality"
+   ],
+   "sentence": "The fireworks show was a phantasmagoria of colours."
+  },
+  {
+   "word": "angelically",
+   "meaning": "in a sweet, innocent, angel-like way",
+   "synonyms": [
+    "sweetly",
+    "innocently"
+   ],
+   "antonyms": [
+    "wickedly",
+    "naughtily"
+   ],
+   "sentence": "The puppy looked up angelically after chewing my slipper."
+  }
+ ]
+}
