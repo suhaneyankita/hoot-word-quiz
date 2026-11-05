@@ -5,6 +5,7 @@ import { pickWords, readyCount } from "./selection.js";
 import { buildQuiz, PROMPTS } from "./questions.js";
 import { nextJoke } from "./jokes.js";
 import { unlockAudio, playBoing, playCheer } from "./sounds.js";
+import { fetchJson } from "./net.js";
 
 const LENGTHS = [5, 10, 15, 20, 30, 40, 50];
 const SECONDS = 30;
@@ -25,6 +26,8 @@ let newWords = 0;
 let chosenLength = 10;
 let quiz = null;
 let timer = null;
+let advance = null;
+let screen = "loading";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
@@ -35,33 +38,38 @@ function readStoredWords() {
   try { return parseWordList(JSON.parse(localStorage.getItem(WORDS_KEY))); } catch { return null; }
 }
 
-async function fetchJson(url) {
-  try {
-    const res = await fetch(url, { cache: "no-store" });
-    return res.ok ? await res.json() : null;
-  } catch { return null; }
-}
-
-async function loadData() {
-  const stored = readStoredWords();
-  if (stored) wordList = stored;
+// Checks for a newer word list. Returns true if the words changed.
+async function refreshData() {
+  const current = wordList.version ? wordList : null;
   const incoming = parseWordList(await fetchJson("data/words.json"));
+  let changed = false;
   if (incoming) {
-    const merged = mergeWordList(stored, incoming);
+    const merged = mergeWordList(current, incoming);
     if (merged.changed) {
       wordList = { version: merged.version, words: merged.words };
-      newWords = merged.added.length;
+      newWords += merged.added.length;
+      changed = true;
       try { localStorage.setItem(WORDS_KEY, JSON.stringify(wordList)); } catch { /* keep in memory */ }
     }
   }
   const j = await fetchJson("data/jokes.json");
   if (Array.isArray(j) && j.length) jokes = j;
+  return changed;
+}
+
+// Back from the background (Home Screen apps are usually resumed, not relaunched): look for new words.
+async function refreshOnStart() {
+  navigator.serviceWorker?.getRegistration?.().then((r) => r?.update()).catch(() => {});
+  if (await refreshData() && screen === "start") showStart();
 }
 
 // ---------- Start ----------
 
 function showStart() {
   stopTimer();
+  clearTimeout(advance);
+  quiz = null;
+  screen = "start";
   const count = readyCount(wordList.words);
   if (chosenLength > count) chosenLength = LENGTHS.filter((n) => n <= count).pop() ?? count;
   const statuses = ready().map((w) => store.get(w.word).status);
@@ -122,6 +130,7 @@ function showQuestion() {
   app.innerHTML = `
     <div class="card">
       <div class="top">
+        <button class="home-btn" id="quit" aria-label="Home">🏠</button>
         <span>⭐ Question ${quiz.index + 1} of ${quiz.questions.length}</span>
         <div class="timer" id="timer"><span id="secs">${SECONDS}</span></div>
       </div>
@@ -132,7 +141,9 @@ function showQuestion() {
       </div>
       <div id="after"></div>
     </div>`;
-  app.querySelectorAll(".opt").forEach((b) => b.addEventListener("click", () => answer(q.options[Number(b.dataset.i)])));
+  screen = "quiz";
+  app.querySelectorAll(".opt").forEach((b) => b.addEventListener("click", () => { unlockAudio(); answer(q.options[Number(b.dataset.i)]); }));
+  app.querySelector("#quit").addEventListener("click", showStart);
   startTimer(() => answer(null));
 }
 
@@ -156,7 +167,7 @@ function answer(choice) {
     quiz.score += 1;
     playCheer();
     after.innerHTML = `<div class="cheer">${pick(CHEERS)}</div>`;
-    setTimeout(nextQuestion, 1200);
+    advance = setTimeout(nextQuestion, 1200);
   } else {
     quiz.missed.push(q.word);
     playBoing();
@@ -209,9 +220,11 @@ function stopTimer() {
 }
 
 document.addEventListener("visibilitychange", () => {
-  if (!timer) return;
-  timer.paused = document.hidden;
-  timer.last = Date.now();
+  if (timer) {
+    timer.paused = document.hidden;
+    timer.last = Date.now();
+  }
+  if (!document.hidden && screen === "start") refreshOnStart();
 });
 
 // ---------- Finished ----------
@@ -238,6 +251,7 @@ function showFinished() {
     </div>`;
   const length = quiz.length;
   quiz = null;
+  screen = "finished";
   app.querySelector("#again").addEventListener("click", () => { unlockAudio(); startQuiz(length); });
   app.querySelector("#home").addEventListener("click", showStart);
   confetti();
@@ -255,6 +269,7 @@ function confetti() {
 
 function showGrownUps() {
   stopTimer();
+  screen = "grown";
   const listed = new Set(wordList.words.map((w) => w.word));
   const practise = Object.entries(store.words)
     .filter(([w, p]) => p.status === "Practise" && listed.has(w))
@@ -306,8 +321,16 @@ async function sendProgress() {
 
 navigator.storage?.persist?.().catch(() => {});
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
-app.innerHTML = `<div class="card"><div class="hoot">🦉</div><div class="bubble">Waking up Hoot…</div></div>`;
-loadData().then(showStart);
+const stored = readStoredWords();
+if (stored) {
+  // Start straight away from the saved words; pick up any new ones in the background.
+  wordList = stored;
+  showStart();
+  refreshOnStart();
+} else {
+  app.innerHTML = `<div class="card"><div class="hoot">🦉</div><div class="bubble">Waking up Hoot…</div></div>`;
+  refreshData().then(showStart);
+}
 
 // For quick checks in the browser console.
 window.hoot = { store, get wordList() { return wordList; }, PROMPTS };
