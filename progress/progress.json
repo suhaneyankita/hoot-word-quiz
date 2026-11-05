@@ -4,30 +4,30 @@
  "words": {
   "sashay": {
    "status": "Practise",
-   "timesAsked": 1,
-   "timesWrong": 1,
-   "correctInARow": 0,
+   "timesAsked": 3,
+   "timesWrong": 2,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "reciprocate": {
    "status": "Practise",
-   "timesAsked": 1,
-   "timesWrong": 1,
-   "correctInARow": 0,
+   "timesAsked": 3,
+   "timesWrong": 2,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "insipid": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "weedy": {
    "status": "Practise",
-   "timesAsked": 1,
+   "timesAsked": 2,
    "timesWrong": 1,
-   "correctInARow": 0,
+   "correctInARow": 1,
    "lastSeen": "2026-11-05"
   },
   "insist": {
@@ -36,9 +36,144 @@
    "timesWrong": 0,
    "correctInARow": 1,
    "lastSeen": "2026-11-05"
+  },
+  "dissonant": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "apex": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "excessive": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "yacht": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "hinder": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "commotion": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "sawdust": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "foster": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "bargain": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "crib": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "flounder": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "proclaim": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "obnoxious": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "wrath": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "subsidise": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "dire": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "torrential": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  },
+  "complacent": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "lubricate": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
   }
  },
  "jokesSeen": [
-  71
+  71,
+  129,
+  157
  ]
 }
