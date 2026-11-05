@@ -1,6 +1,44 @@
 {
  "app": "hoot-word-quiz",
  "exported": "2026-11-05",
- "words": {},
- "jokesSeen": []
+ "words": {
+  "sashay": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "reciprocate": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "insipid": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "weedy": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-05"
+  },
+  "insist": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-05"
+  }
+ },
+ "jokesSeen": [
+  71
+ ]
 }
