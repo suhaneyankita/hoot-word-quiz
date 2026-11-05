@@ -30,7 +30,7 @@ export const SAMPLE = [
   w("wary", "", [], [], ""),
 ];
 
-export const READY = SAMPLE.filter((x) => !["abhor", "rant", "wary"].includes(x.word));
+export const READY = SAMPLE.filter((x) => !["abhor", "wary"].includes(x.word));
 
 export function fakeStorage(initial = {}) {
   const m = new Map(Object.entries(initial));
