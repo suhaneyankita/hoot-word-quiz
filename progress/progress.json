@@ -1,58 +1,6 @@
 {
  "app": "hoot-word-quiz",
  "exported": "2026-11-05",
- "words": {
-  "reiterate": {
-   "status": "Passed",
-   "timesAsked": 1,
-   "timesWrong": 0,
-   "correctInARow": 1,
-   "lastSeen": "2026-11-05"
-  },
-  "bargain": {
-   "status": "Passed",
-   "timesAsked": 1,
-   "timesWrong": 0,
-   "correctInARow": 1,
-   "lastSeen": "2026-11-05"
-  },
-  "insist": {
-   "status": "Passed",
-   "timesAsked": 1,
-   "timesWrong": 0,
-   "correctInARow": 1,
-   "lastSeen": "2026-11-05"
-  },
-  "idiosyncratic": {
-   "status": "Passed",
-   "timesAsked": 1,
-   "timesWrong": 0,
-   "correctInARow": 1,
-   "lastSeen": "2026-11-05"
-  },
-  "abhor": {
-   "status": "Passed",
-   "timesAsked": 1,
-   "timesWrong": 0,
-   "correctInARow": 1,
-   "lastSeen": "2026-11-05"
-  },
-  "essential": {
-   "status": "Practise",
-   "timesAsked": 2,
-   "timesWrong": 2,
-   "correctInARow": 0,
-   "lastSeen": "2026-11-05"
-  },
-  "angelically": {
-   "status": "Practise",
-   "timesAsked": 1,
-   "timesWrong": 1,
-   "correctInARow": 0,
-   "lastSeen": "2026-11-05"
-  }
- },
- "jokesSeen": [
-  75
- ]
+ "words": {},
+ "jokesSeen": []
 }
