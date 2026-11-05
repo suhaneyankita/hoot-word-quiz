@@ -39,11 +39,28 @@ push() { git -c credential.helper= -c credential.helper='!gh auth git-credential
 git add app/data/words.json
 git diff --cached --quiet || git commit -q -m "chore: update word list"
 
-# The deploy workflow gives the offline cache a fresh name on every push, so the iPad updates.
 if ! gh repo view "$OWNER/$REPO" > /dev/null 2>&1; then
   gh repo create "$OWNER/$REPO" --public --description "Hoot's Word Quiz for iPad"
-  # Pages must be switched on before the first push, or the first deploy fails.
-  gh api -X POST "repos/$OWNER/$REPO/pages" -f build_type=workflow > /dev/null
 fi
 push
+
+# The website is the app/ folder, published on its own gh-pages branch.
+# Each publish gets a fresh offline-cache name so the iPad picks up the new files.
+site="$(mktemp -d)"
+cp -R app/. "$site"
+sed -i '' "s/const CACHE = \"hoot-[A-Za-z0-9]*\"/const CACHE = \"hoot-$(git rev-parse --short=8 HEAD)-$(date +%s)\"/" "$site/sw.js"
+touch "$site/.nojekyll"
+(
+  cd "$site"
+  git init -q -b gh-pages
+  git add -A
+  git -c user.name="$OWNER" -c user.email="$OWNER@users.noreply.github.com" commit -q -m "chore: publish site"
+  git -c credential.helper= -c credential.helper='!gh auth git-credential' push -q --force "$REMOTE" gh-pages
+)
+rm -rf "$site"
+
+# Point Pages at the gh-pages branch (creates the site the first time, switches it otherwise).
+if ! gh api -X POST "repos/$OWNER/$REPO/pages" -f build_type=legacy -f "source[branch]=gh-pages" -f "source[path]=/" > /dev/null 2>&1; then
+  gh api -X PUT "repos/$OWNER/$REPO/pages" -f build_type=legacy -f "source[branch]=gh-pages" -f "source[path]=/" > /dev/null
+fi
 echo "Published: https://$OWNER.github.io/$REPO/ (live in a minute or two)"
