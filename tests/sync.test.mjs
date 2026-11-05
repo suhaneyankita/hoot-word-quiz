@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { saveToGitHub, toBase64 } from "../app/js/sync.js";
+import { saveToGitHub, loadFromGitHub, toBase64 } from "../app/js/sync.js";
 
 const base = { token: "t", owner: "o", repo: "r", path: "progress/progress.json" };
 
@@ -56,6 +56,24 @@ test("reports a bad or expired key", async () => {
 test("reports offline without throwing", async () => {
   const fetchImpl = async () => { throw new TypeError("Failed to fetch"); };
   assert.deepEqual(await saveToGitHub({ ...base, json: {}, fetchImpl }), { ok: false, reason: "offline" });
+});
+
+test("loads the saved progress file, with or without a key", async () => {
+  const file = { app: "hoot-word-quiz", words: { timid: { status: "Passed" } } };
+  const seen = [];
+  const fetchImpl = async (url, opts = {}) => {
+    seen.push(opts.headers?.Authorization ?? "none");
+    return { ok: true, status: 200, json: async () => ({ content: toBase64(JSON.stringify(file)), encoding: "base64" }) };
+  };
+  assert.deepEqual(await loadFromGitHub({ ...base, token: "", fetchImpl }), file);
+  assert.deepEqual(await loadFromGitHub({ ...base, fetchImpl }), file);
+  assert.deepEqual(seen, ["none", "Bearer t"]);
+});
+
+test("loading returns null when missing, offline or garbled", async () => {
+  assert.equal(await loadFromGitHub({ ...base, fetchImpl: async () => ({ ok: false, status: 404 }) }), null);
+  assert.equal(await loadFromGitHub({ ...base, fetchImpl: async () => { throw new TypeError("offline"); } }), null);
+  assert.equal(await loadFromGitHub({ ...base, fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ content: "!!!" }) }) }), null);
 });
 
 test("does nothing without a key", async () => {

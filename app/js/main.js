@@ -6,7 +6,7 @@ import { buildQuiz, PROMPTS } from "./questions.js";
 import { nextJoke } from "./jokes.js";
 import { unlockAudio, playBoing, playCheer } from "./sounds.js";
 import { fetchJson } from "./net.js";
-import { saveToGitHub } from "./sync.js";
+import { saveToGitHub, loadFromGitHub } from "./sync.js";
 
 const LENGTHS = [5, 10, 15, 20, 30, 40, 50];
 const SECONDS = 30;
@@ -66,8 +66,11 @@ async function refreshData() {
 // Back from the background (Home Screen apps are usually resumed, not relaunched): look for new words.
 async function refreshOnStart() {
   navigator.serviceWorker?.getRegistration?.().then((r) => r?.update()).catch(() => {});
+  // Progress saved by her other devices (or before this iPad was reset) joins what's here.
+  const merged = store.mergeFrom(await loadFromGitHub({ ...GH_REPO, token: readLocal(GH_KEY) }));
   syncProgress(); // anything that couldn't be saved earlier (e.g. the iPad was offline)
-  if (await refreshData() && screen === "start") showStart();
+  const wordsChanged = await refreshData();
+  if ((wordsChanged || merged) && screen === "start") showStart();
 }
 
 // ---------- Start ----------
@@ -424,7 +427,7 @@ if (stored) {
   refreshOnStart();
 } else {
   app.innerHTML = `<div class="card"><div class="hoot">🦉</div><div class="bubble">Waking up Hoot…</div></div>`;
-  refreshData().then(showStart);
+  refreshData().then(() => { showStart(); refreshOnStart(); });
 }
 
 // For quick checks in the browser console.

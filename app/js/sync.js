@@ -17,6 +17,24 @@ async function call(fetchImpl, url, options, timeoutMs) {
   }
 }
 
+function fromBase64(b64) {
+  const binary = atob(b64.replace(/\s/g, ""));
+  return new TextDecoder().decode(Uint8Array.from(binary, (c) => c.charCodeAt(0)));
+}
+
+// Reads the saved progress file. The repository is public, so no key is needed (a key just raises the rate limit).
+export async function loadFromGitHub({ token, owner, repo, path, fetchImpl = globalThis.fetch, timeoutMs = 5000 }) {
+  const headers = { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  try {
+    const res = await call(fetchImpl, `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=main`, { headers, cache: "no-store" }, timeoutMs);
+    if (!res.ok) return null;
+    return JSON.parse(fromBase64((await res.json()).content));
+  } catch {
+    return null;
+  }
+}
+
 export async function saveToGitHub({ token, owner, repo, path, json, fetchImpl = globalThis.fetch, timeoutMs = 8000 }) {
   if (!token) return { ok: false, reason: "no-key" };
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;

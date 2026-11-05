@@ -63,6 +63,38 @@ test("resetJokes clears seen", () => {
   assert.deepEqual(s.jokesSeen, []);
 });
 
+test("mergeFrom takes words only the other device has", () => {
+  const s = new ProgressStore(fakeStorage());
+  s.record("timid", true, D);
+  const changed = s.mergeFrom({ app: "hoot-word-quiz", words: { arduous: { status: "Practise", timesAsked: 2, timesWrong: 2, correctInARow: 0, lastSeen: D } }, jokesSeen: [4] });
+  assert.equal(changed, true);
+  assert.equal(s.get("arduous").status, "Practise");
+  assert.equal(s.get("timid").status, "Passed");
+  assert.deepEqual(s.jokesSeen, [4]);
+});
+
+test("mergeFrom keeps whichever record has more answers", () => {
+  const s = new ProgressStore(fakeStorage());
+  s.record("timid", false, "2026-11-04");
+  s.record("timid", true, "2026-11-05");
+  s.record("timid", true, "2026-11-05");
+  const older = { app: "hoot-word-quiz", words: { timid: { status: "Practise", timesAsked: 1, timesWrong: 1, correctInARow: 0, lastSeen: "2026-11-04" } } };
+  assert.equal(s.mergeFrom(older), false);
+  assert.equal(s.get("timid").status, "Passed");
+  const newer = { app: "hoot-word-quiz", words: { timid: { status: "Practise", timesAsked: 5, timesWrong: 3, correctInARow: 0, lastSeen: "2026-11-06" } } };
+  assert.equal(s.mergeFrom(newer), true);
+  assert.equal(s.get("timid").timesAsked, 5);
+});
+
+test("mergeFrom saves, and ignores files that aren't ours", () => {
+  const st = fakeStorage();
+  const s = new ProgressStore(st);
+  assert.equal(s.mergeFrom({ app: "other", words: { x: { timesAsked: 9 } } }), false);
+  assert.equal(s.mergeFrom(null), false);
+  s.mergeFrom({ app: "hoot-word-quiz", words: { x: { status: "Passed", timesAsked: 1, timesWrong: 0, correctInARow: 1, lastSeen: D } } });
+  assert.equal(new ProgressStore(st).get("x").status, "Passed");
+});
+
 test("exportFile shape", () => {
   const s = new ProgressStore(fakeStorage());
   s.record("timid", false, D);

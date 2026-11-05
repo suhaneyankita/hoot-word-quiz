@@ -63,6 +63,32 @@ export class ProgressStore {
     this.#save();
   }
 
+  // Combine progress saved by another device. Per word, the record with more answers wins
+  // (then the more recent one). Returns true if anything changed.
+  mergeFrom(file) {
+    if (!file || file.app !== "hoot-word-quiz" || typeof file.words !== "object" || !file.words) return false;
+    let changed = false;
+    for (const [word, theirs] of Object.entries(file.words)) {
+      if (!theirs || typeof theirs !== "object") continue;
+      const key = word.toLowerCase();
+      const mine = this.words[key];
+      const more = !mine || (theirs.timesAsked ?? 0) > (mine.timesAsked ?? 0) ||
+        ((theirs.timesAsked ?? 0) === (mine.timesAsked ?? 0) && (theirs.lastSeen ?? "") > (mine.lastSeen ?? ""));
+      if (more) {
+        this.words[key] = { ...fresh(), ...theirs };
+        changed = true;
+      }
+    }
+    for (const i of Array.isArray(file.jokesSeen) ? file.jokesSeen : []) {
+      if (!this.jokesSeen.includes(i)) {
+        this.jokesSeen.push(i);
+        changed = true;
+      }
+    }
+    if (changed) this.#save();
+    return changed;
+  }
+
   exportFile(today) {
     return { app: "hoot-word-quiz", exported: today, words: this.words, jokesSeen: this.jokesSeen };
   }
