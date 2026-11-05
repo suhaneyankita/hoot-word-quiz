@@ -146,15 +146,18 @@ function showQuestion() {
       <div class="options">
         ${q.options.map((o, i) => `<button class="opt ${o.length > 28 ? "long" : ""}" data-i="${i}">${esc(o)}</button>`).join("")}
       </div>
+      <div class="row" id="tellRow"><button class="btn tell" id="tell">🤔 Reveal pls</button></div>
       <div id="after"></div>
     </div>`;
   screen = "quiz";
   app.querySelectorAll(".opt").forEach((b) => b.addEventListener("click", () => { unlockAudio(); answer(q.options[Number(b.dataset.i)]); }));
+  app.querySelector("#tell").addEventListener("click", () => { unlockAudio(); answer(null, "asked"); });
   app.querySelector("#quit").addEventListener("click", showStart);
-  startTimer(() => answer(null));
+  startTimer(() => answer(null, "timeout"));
 }
 
-function answer(choice) {
+// how: "picked" (tapped an option), "timeout" (ran out of time) or "asked" (tapped Reveal pls; counts as wrong).
+function answer(choice, how = "picked") {
   if (!quiz || quiz.answered) return;
   quiz.answered = true;
   stopTimer();
@@ -170,6 +173,7 @@ function answer(choice) {
     else if (opt === choice || !correct) b.classList.add("faded");
   });
 
+  app.querySelector("#tellRow")?.remove();
   const after = app.querySelector("#after");
   if (correct) {
     quiz.score += 1;
@@ -178,8 +182,9 @@ function answer(choice) {
     advance = setTimeout(nextQuestion, 1200);
   } else {
     quiz.missed.push(q.word);
-    playBoing();
-    const title = choice === null ? "Time's up! ⏰" : "Oopsie-daisy! Nearly there!";
+    // Asking is a good thing to do, so no "boing" for it.
+    if (how !== "asked") playBoing();
+    const title = { asked: "Good question! Here's the answer 💡", timeout: "Time's up! ⏰" }[how] ?? "Oopsie-daisy! Nearly there!";
     after.innerHTML = `
       <div class="explain">🦉 <b>${title}</b><br>${esc(q.explanation)}</div>
       <div class="row"><button class="btn" id="next">Next ➜</button></div>`;
