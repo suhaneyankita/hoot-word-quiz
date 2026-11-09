@@ -39,8 +39,8 @@
   },
   "dissonant": {
    "status": "Practise",
-   "timesAsked": 3,
-   "timesWrong": 2,
+   "timesAsked": 4,
+   "timesWrong": 3,
    "correctInARow": 0,
    "lastSeen": "2026-11-09"
   },
@@ -277,8 +277,8 @@
   },
   "procure": {
    "status": "Practise",
-   "timesAsked": 3,
-   "timesWrong": 3,
+   "timesAsked": 4,
+   "timesWrong": 4,
    "correctInARow": 0,
    "lastSeen": "2026-11-09"
   },
@@ -862,6 +862,27 @@
    "timesWrong": 0,
    "correctInARow": 1,
    "lastSeen": "2026-11-09"
+  },
+  "plume": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-09"
+  },
+  "envious": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-09"
+  },
+  "divert": {
+   "status": "Practise",
+   "timesAsked": 1,
+   "timesWrong": 1,
+   "correctInARow": 0,
+   "lastSeen": "2026-11-09"
   }
  },
  "jokesSeen": [
@@ -872,6 +893,7 @@
   80,
   110,
   133,
-  166
+  166,
+  114
  ]
 }
