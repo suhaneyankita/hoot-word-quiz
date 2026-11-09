@@ -1,6 +1,6 @@
 {
  "app": "hoot-word-quiz",
- "exported": "2026-11-05",
+ "exported": "2026-11-09",
  "words": {
   "sashay": {
    "status": "Passed",
@@ -347,10 +347,10 @@
   },
   "benign": {
    "status": "Practise",
-   "timesAsked": 1,
-   "timesWrong": 1,
+   "timesAsked": 2,
+   "timesWrong": 2,
    "correctInARow": 0,
-   "lastSeen": "2026-11-05"
+   "lastSeen": "2026-11-09"
   },
   "meander": {
    "status": "Passed",
@@ -617,6 +617,13 @@
    "timesWrong": 0,
    "correctInARow": 1,
    "lastSeen": "2026-11-05"
+  },
+  "rationale": {
+   "status": "Passed",
+   "timesAsked": 1,
+   "timesWrong": 0,
+   "correctInARow": 1,
+   "lastSeen": "2026-11-09"
   }
  },
  "jokesSeen": [
