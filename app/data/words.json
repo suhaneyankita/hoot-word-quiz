@@ -1,5 +1,5 @@
 {
- "version": "2026-11-05T13:25:55+00:00",
+ "version": "2026-11-13T20:01:37+00:00",
  "words": [
   {
    "word": "adulation",
@@ -2230,6 +2230,524 @@
     "naughtily"
    ],
    "sentence": "The puppy looked up angelically after chewing my slipper."
+  },
+  {
+   "word": "ample",
+   "meaning": "more than enough",
+   "synonyms": [
+    "plentiful",
+    "abundant",
+    "plenty"
+   ],
+   "antonyms": [
+    "insufficient",
+    "inadequate"
+   ],
+   "sentence": "We had ample time to finish the puzzle before tea."
+  },
+  {
+   "word": "reluctant",
+   "meaning": "not wanting to do something",
+   "synonyms": [
+    "unwilling",
+    "hesitant",
+    "unenthusiastic"
+   ],
+   "antonyms": [
+    "eager",
+    "willing",
+    "keen"
+   ],
+   "sentence": "The reluctant puppy would not go out in the rain."
+  },
+  {
+   "word": "meticulous",
+   "meaning": "very careful about every small detail",
+   "synonyms": [
+    "careful",
+    "precise",
+    "thorough"
+   ],
+   "antonyms": [
+    "careless",
+    "sloppy"
+   ],
+   "sentence": "She was meticulous about colouring inside the lines."
+  },
+  {
+   "word": "transient",
+   "meaning": "lasting only a short time",
+   "synonyms": [
+    "temporary",
+    "brief",
+    "fleeting"
+   ],
+   "antonyms": [
+    "permanent",
+    "lasting"
+   ],
+   "sentence": "The rainbow was transient and faded within minutes."
+  },
+  {
+   "word": "symphony",
+   "meaning": "a long piece of music for a full orchestra",
+   "synonyms": [
+    "composition",
+    "concerto"
+   ],
+   "antonyms": [],
+   "sentence": "The orchestra played a beautiful symphony at the concert."
+  },
+  {
+   "word": "scarce",
+   "meaning": "in short supply and hard to find",
+   "synonyms": [
+    "rare",
+    "scant",
+    "sparse"
+   ],
+   "antonyms": [
+    "plentiful",
+    "abundant"
+   ],
+   "sentence": "Water was scarce in the desert, so they saved every drop."
+  },
+  {
+   "word": "taut",
+   "meaning": "stretched tight",
+   "synonyms": [
+    "tight",
+    "tense",
+    "rigid"
+   ],
+   "antonyms": [
+    "slack",
+    "loose"
+   ],
+   "sentence": "The tightrope walker stepped onto the taut rope."
+  },
+  {
+   "word": "slender",
+   "meaning": "thin in a graceful way",
+   "synonyms": [
+    "slim",
+    "thin",
+    "slight"
+   ],
+   "antonyms": [
+    "plump",
+    "stout",
+    "chunky"
+   ],
+   "sentence": "The giraffe has a long, slender neck."
+  },
+  {
+   "word": "beam",
+   "meaning": "to give a big, wide smile",
+   "synonyms": [
+    "grin",
+    "smile",
+    "glow"
+   ],
+   "antonyms": [
+    "frown",
+    "scowl"
+   ],
+   "sentence": "Grandma began to beam when she saw her birthday cake."
+  },
+  {
+   "word": "blemished",
+   "meaning": "spoiled by a mark or flaw",
+   "synonyms": [
+    "marked",
+    "flawed",
+    "spotted"
+   ],
+   "antonyms": [
+    "flawless",
+    "perfect",
+    "spotless"
+   ],
+   "sentence": "The apple was blemished with brown spots, but it still tasted sweet."
+  },
+  {
+   "word": "ensnared",
+   "meaning": "caught in a trap",
+   "synonyms": [
+    "trapped",
+    "caught",
+    "snared"
+   ],
+   "antonyms": [
+    "freed",
+    "released"
+   ],
+   "sentence": "The fly was ensnared in the spider's web."
+  },
+  {
+   "word": "spontaneous",
+   "meaning": "done suddenly, without planning",
+   "synonyms": [
+    "impulsive",
+    "unplanned",
+    "sudden"
+   ],
+   "antonyms": [
+    "planned",
+    "premeditated"
+   ],
+   "sentence": "We had a spontaneous picnic when the sun came out."
+  },
+  {
+   "word": "initial",
+   "meaning": "happening at the beginning; first",
+   "synonyms": [
+    "first",
+    "opening",
+    "early"
+   ],
+   "antonyms": [
+    "final",
+    "last"
+   ],
+   "sentence": "My initial worry about the test disappeared once I started."
+  },
+  {
+   "word": "ally",
+   "meaning": "a friend who helps and supports you",
+   "synonyms": [
+    "friend",
+    "partner",
+    "supporter"
+   ],
+   "antonyms": [
+    "enemy",
+    "opponent",
+    "foe"
+   ],
+   "sentence": "In the game, the dragon became our ally against the giant."
+  },
+  {
+   "word": "conduct",
+   "meaning": "the way someone behaves",
+   "synonyms": [
+    "behaviour",
+    "manners"
+   ],
+   "antonyms": [
+    "misconduct",
+    "misbehaviour"
+   ],
+   "sentence": "The teacher praised the class for their good conduct on the trip."
+  },
+  {
+   "word": "ebb",
+   "meaning": "to flow away or slowly become less",
+   "synonyms": [
+    "recede",
+    "fade",
+    "dwindle"
+   ],
+   "antonyms": [
+    "flow",
+    "rise",
+    "swell"
+   ],
+   "sentence": "We watched the tide ebb away from our sandcastle."
+  },
+  {
+   "word": "ailment",
+   "meaning": "a minor illness",
+   "synonyms": [
+    "illness",
+    "sickness",
+    "complaint"
+   ],
+   "antonyms": [],
+   "sentence": "A cold is a common winter ailment."
+  },
+  {
+   "word": "hue",
+   "meaning": "a colour or shade",
+   "synonyms": [
+    "colour",
+    "shade",
+    "tint",
+    "tone"
+   ],
+   "antonyms": [],
+   "sentence": "The sky turned a pink hue as the sun set."
+  },
+  {
+   "word": "rash",
+   "meaning": "done too quickly, without thinking",
+   "synonyms": [
+    "reckless",
+    "impulsive",
+    "hasty"
+   ],
+   "antonyms": [
+    "careful",
+    "cautious",
+    "sensible"
+   ],
+   "sentence": "It was rash to spend all her pocket money at once."
+  },
+  {
+   "word": "vivacious",
+   "meaning": "lively and full of energy",
+   "synonyms": [
+    "lively",
+    "spirited",
+    "energetic",
+    "bubbly"
+   ],
+   "antonyms": [
+    "dull",
+    "lifeless",
+    "listless"
+   ],
+   "sentence": "The vivacious girl bounced around the playground."
+  },
+  {
+   "word": "bubbly",
+   "meaning": "cheerful and full of energy",
+   "synonyms": [
+    "cheerful",
+    "lively",
+    "sparkling"
+   ],
+   "antonyms": [
+    "gloomy",
+    "glum"
+   ],
+   "sentence": "The bubbly boy put his hand up for every question."
+  },
+  {
+   "word": "witty",
+   "meaning": "clever and funny with words",
+   "synonyms": [
+    "clever",
+    "amusing",
+    "funny"
+   ],
+   "antonyms": [
+    "dull",
+    "boring"
+   ],
+   "sentence": "His witty jokes made the whole class giggle."
+  },
+  {
+   "word": "zany",
+   "meaning": "silly in a funny, unusual way",
+   "synonyms": [
+    "wacky",
+    "crazy",
+    "silly",
+    "madcap"
+   ],
+   "antonyms": [
+    "serious",
+    "sensible"
+   ],
+   "sentence": "The clown's zany tricks made everyone laugh."
+  },
+  {
+   "word": "soppy",
+   "meaning": "sentimental in a silly way",
+   "synonyms": [
+    "sentimental",
+    "mushy",
+    "slushy"
+   ],
+   "antonyms": [],
+   "sentence": "Dad gets soppy whenever he watches old family videos."
+  },
+  {
+   "word": "sentiment",
+   "meaning": "a feeling or opinion",
+   "synonyms": [
+    "feeling",
+    "emotion",
+    "opinion",
+    "view"
+   ],
+   "antonyms": [],
+   "sentence": "I share your sentiment: this is the best pizza ever!"
+  },
+  {
+   "word": "exhilarated",
+   "meaning": "very happy and excited",
+   "synonyms": [
+    "thrilled",
+    "elated",
+    "excited"
+   ],
+   "antonyms": [
+    "miserable",
+    "depressed"
+   ],
+   "sentence": "We felt exhilarated after the rollercoaster ride."
+  },
+  {
+   "word": "euphoric",
+   "meaning": "extremely happy and excited",
+   "synonyms": [
+    "elated",
+    "ecstatic",
+    "overjoyed",
+    "thrilled"
+   ],
+   "antonyms": [
+    "miserable",
+    "despondent"
+   ],
+   "sentence": "The team was euphoric after scoring the winning goal."
+  },
+  {
+   "word": "delirious",
+   "meaning": "so excited or ill that you can't think clearly",
+   "synonyms": [
+    "frenzied",
+    "feverish",
+    "hysterical"
+   ],
+   "antonyms": [
+    "calm",
+    "rational"
+   ],
+   "sentence": "The fans were delirious with joy when the band came on stage."
+  },
+  {
+   "word": "agitate",
+   "meaning": "to make someone worried or upset",
+   "synonyms": [
+    "upset",
+    "disturb",
+    "unsettle",
+    "fluster"
+   ],
+   "antonyms": [
+    "calm",
+    "soothe",
+    "pacify"
+   ],
+   "sentence": "Loud noises agitate our nervous cat."
+  },
+  {
+   "word": "conscious",
+   "meaning": "awake and aware of what is happening",
+   "synonyms": [
+    "aware",
+    "awake",
+    "alert",
+    "mindful"
+   ],
+   "antonyms": [
+    "unconscious",
+    "unaware"
+   ],
+   "sentence": "She was conscious of everyone watching her."
+  },
+  {
+   "word": "evaluate",
+   "meaning": "to judge how good or important something is",
+   "synonyms": [
+    "assess",
+    "judge",
+    "rate",
+    "review"
+   ],
+   "antonyms": [],
+   "sentence": "The teacher will evaluate our stories on Friday."
+  },
+  {
+   "word": "idolise",
+   "meaning": "to admire someone very much",
+   "synonyms": [
+    "adore",
+    "admire",
+    "look up to"
+   ],
+   "antonyms": [
+    "despise",
+    "loathe"
+   ],
+   "sentence": "Many children idolise famous footballers."
+  },
+  {
+   "word": "impede",
+   "meaning": "to slow down or block progress",
+   "synonyms": [
+    "obstruct",
+    "hamper",
+    "block"
+   ],
+   "antonyms": [
+    "help",
+    "assist",
+    "aid"
+   ],
+   "sentence": "Fallen trees can impede the traffic after a storm."
+  },
+  {
+   "word": "miscellaneous",
+   "meaning": "made up of many different kinds of things",
+   "synonyms": [
+    "assorted",
+    "mixed",
+    "various",
+    "varied"
+   ],
+   "antonyms": [
+    "similar",
+    "uniform"
+   ],
+   "sentence": "The drawer was full of miscellaneous bits and bobs."
+  },
+  {
+   "word": "rejoice",
+   "meaning": "to feel or show great happiness",
+   "synonyms": [
+    "celebrate",
+    "cheer",
+    "delight"
+   ],
+   "antonyms": [
+    "mourn",
+    "grieve"
+   ],
+   "sentence": "The villagers will rejoice when the dragon is defeated."
+  },
+  {
+   "word": "resolute",
+   "meaning": "firmly determined",
+   "synonyms": [
+    "determined",
+    "firm",
+    "steadfast"
+   ],
+   "antonyms": [
+    "hesitant",
+    "unsure",
+    "wavering"
+   ],
+   "sentence": "She was resolute about finishing the race, even in the rain."
+  },
+  {
+   "word": "turmoil",
+   "meaning": "a state of great confusion and disorder",
+   "synonyms": [
+    "chaos",
+    "confusion",
+    "upheaval"
+   ],
+   "antonyms": [
+    "calm",
+    "peace",
+    "order"
+   ],
+   "sentence": "The classroom was in turmoil after the fire alarm."
   }
  ]
 }
