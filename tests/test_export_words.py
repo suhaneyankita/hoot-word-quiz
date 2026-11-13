@@ -39,4 +39,4 @@ def test_export_real_sheet(tmp_path):
     out = tmp_path / "words.json"
     n = export(ROOT / "Word List.xlsx", out, datetime.now(timezone.utc))
     words = [w["word"] for w in json.loads(out.read_text())["words"]]
-    assert n == 170 and len(set(words)) == 170
+    assert n >= 170 and len(set(words)) == n

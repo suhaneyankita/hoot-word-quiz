@@ -18,8 +18,8 @@ if [[ "${1:-}" != "--dry-run" ]]; then
 fi
 
 .venv/bin/python tools/export_words.py "Word List.xlsx" app/data/words.json
-node --test tests/*.test.mjs > /dev/null
-.venv/bin/pytest -q tests > /dev/null
+node --test tests/*.test.mjs > /tmp/hoot-node-tests.log 2>&1 || { tail -30 /tmp/hoot-node-tests.log; echo "Tests failed: not publishing" >&2; exit 1; }
+.venv/bin/pytest -q tests > /tmp/hoot-py-tests.log 2>&1 || { tail -30 /tmp/hoot-py-tests.log; echo "Tests failed: not publishing" >&2; exit 1; }
 echo "Tests passed"
 
 if [[ "${1:-}" == "--dry-run" ]]; then
